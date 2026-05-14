@@ -25,4 +25,4 @@ Acest proiect a fost creat pentru **Olimpiada de Inovare și Creație Digitală 
 3. (Opțional) Folosește extensia *Live Server* în VS Code pentru o experiență optimă.
 
 ---
-Creat de **Druș Luca Ioan** - Elev în clasa a X-a B la Colegiul Național [Numele Liceului tău], Dej.
+Creat de **Druș Luca Ioan** - Elev în clasa a X-a B la Colegiul Național ,,Andrei Mureșanu" Dej.
