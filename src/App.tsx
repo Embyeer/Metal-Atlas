@@ -34,7 +34,7 @@ export default function App() {
             <span className="text-black font-black -rotate-45">M</span>
           </div>
           <h1 className="text-2xl italic-black uppercase tracking-wider">
-            Metal Atlas <span className="text-orange-500 not-italic tracking-normal text-xs font-bold ml-1 opacity-50">v1.1</span>
+            Metal Atlas <span className="text-orange-500 not-italic tracking-normal text-xs font-bold ml-1 opacity-50">v2.0</span>
           </h1>
         </div>
 
