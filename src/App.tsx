@@ -40,7 +40,12 @@ export default function App() {
 
         <nav className="hidden md:flex items-center gap-8 text-[10px] uppercase tracking-[0.2em] font-bold">
           <span className="text-orange-500 border-b border-orange-500 pb-1">Evolutionary Map</span>
-          <a href="#" className="p-2 border border-white/10 rounded hover:bg-white/5 transition-colors">
+          <a 
+            href="https://github.com/Embyeer/Metal-Atlas/tree/main" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="p-2 border border-white/10 rounded hover:bg-white/5 transition-colors"
+          >
             <Github size={14} />
           </a>
         </nav>
