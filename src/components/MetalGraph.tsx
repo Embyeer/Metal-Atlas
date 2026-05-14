@@ -75,21 +75,37 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
       .attr('fill', 'rgba(255,255,255,0.2)')
       .style('stroke', 'none');
 
-    // Genre-specific markers
+    // Genre-specific markers (Normal and Hover versions)
     GENRES.forEach(g => {
+      // Normal state marker
       defs.append('marker')
         .attr('id', `arrowhead-${g.id}`)
         .attr('viewBox', '-0 -5 10 10')
         .attr('refX', 22)
         .attr('refY', 0)
         .attr('orient', 'auto')
-        .attr('markerWidth', 6)
-        .attr('markerHeight', 6)
+        .attr('markerWidth', 3.5)
+        .attr('markerHeight', 3.5)
         .attr('xoverflow', 'visible')
         .append('svg:path')
         .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
         .attr('fill', g.color)
-        .style('stroke', 'none');
+        .attr('opacity', 0.4);
+
+      // Hover/Active state marker (Larger)
+      defs.append('marker')
+        .attr('id', `arrowhead-active-${g.id}`)
+        .attr('viewBox', '-0 -5 10 10')
+        .attr('refX', 22)
+        .attr('refY', 0)
+        .attr('orient', 'auto')
+        .attr('markerWidth', 5.5) 
+        .attr('markerHeight', 5.5)
+        .attr('xoverflow', 'visible')
+        .append('svg:path')
+        .attr('d', 'M 0,-5 L 10 ,0 L 0,5')
+        .attr('fill', g.color)
+        .attr('opacity', 1);
     });
 
     // Zoom setup
@@ -103,10 +119,12 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
     svg.call(zoom);
 
     const simulation = d3.forceSimulation<Node>(data.nodes)
-      .force('link', d3.forceLink<Node, Link>(data.links).id(d => d.id).distance(180))
-      .force('charge', d3.forceManyBody().strength(-800))
+      .force('link', d3.forceLink<Node, Link>(data.links).id(d => d.id).distance(280))
+      .force('charge', d3.forceManyBody().strength(-1800))
       .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(100));
+      .force('collision', d3.forceCollide().radius(100))
+      .force('x', d3.forceX(width / 2).strength(0.1))
+      .force('y', d3.forceY(height / 2).strength(0.1));
 
     // Fix Heavy Metal in the center
     const rootNode = data.nodes.find(n => n.id === 'heavy-metal');
@@ -120,9 +138,12 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
       .selectAll('line')
       .data(data.links)
       .join('line')
-      .attr('stroke', 'rgba(255,255,255,0.15)')
+      .attr('stroke', 'rgba(255,255,255,0.06)') // Even subtler links
       .attr('stroke-width', 1.5)
-      .attr('marker-end', 'url(#arrowhead)');
+      .attr('marker-end', (l: any) => `url(#arrowhead-${l.source.id})`);
+
+    // Particles Group for flow animation
+    const particlesG = g.append('g').attr('class', 'particles').style('pointer-events', 'none');
 
     // Nodes container
     const node = g.append('g')
@@ -136,63 +157,69 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
         onSelectGenre(d.id);
       })
       .on('mouseenter', (event: any, d: Node) => {
-        if (selectedId) return; // Don't show tooltip if a modal is open
+        if (selectedId) return; 
         const genre = GENRES.find(g => g.id === d.id);
         if (genre) setHoveredNode(genre);
         
         // Scale and highlight hovered node
         d3.select(event.currentTarget).select('circle')
           .transition()
-          .duration(200)
-          .attr('r', 14)
+          .duration(300)
+          .attr('r', 18)
           .attr('stroke', d.color)
-          .attr('stroke-width', 3);
+          .attr('stroke-width', 4)
+          .style('filter', `drop-shadow(0 0 15px ${d.color})`);
         
         d3.select(event.currentTarget).select('text')
           .transition()
-          .duration(200)
+          .duration(300)
           .attr('fill', '#fff')
-          .attr('dy', -25);
+          .attr('dy', -32)
+          .style('font-size', '13px');
 
-        // Highlight and colorized incoming links (arrows pointing to this node)
+        // Highlight and expand incoming links pointing to this node
         link.filter((l: any) => l.target.id === d.id)
           .transition()
-          .duration(300)
+          .duration(400)
           .attr('stroke', (l: any) => l.source.color)
-          .attr('stroke-width', 3)
+          .attr('stroke-width', 4)
           .attr('opacity', 1)
-          .attr('marker-end', (l: any) => `url(#arrowhead-${l.source.id})`);
+          .attr('marker-end', (l: any) => `url(#arrowhead-active-${l.source.id})`);
         
-        // Dim other links for clarity
+        // Dim other links
         link.filter((l: any) => l.target.id !== d.id)
           .transition()
-          .duration(300)
-          .attr('opacity', 0.1);
+          .duration(400)
+          .attr('opacity', 0.02);
       })
       .on('mouseleave', (event: any, d: Node) => {
         setHoveredNode(null);
         
         // Reset node style
+        const isSelected = d.id === selectedId;
+        const isRoot = d.id === 'heavy-metal';
         d3.select(event.currentTarget).select('circle')
           .transition()
-          .duration(200)
-          .attr('r', d.id === selectedId ? 10 : 6)
-          .attr('stroke', d.id === selectedId ? '#f97316' : '#111')
-          .attr('stroke-width', 2);
+          .duration(300)
+          .attr('r', isRoot ? 20 : (isSelected ? 16 : 8))
+          .attr('stroke', isSelected ? '#f97316' : '#111')
+          .attr('stroke-width', isSelected ? 3 : 2)
+          .style('filter', isSelected ? 'drop-shadow(0 0 12px rgba(249,115,22,0.8))' : 'none');
 
         d3.select(event.currentTarget).select('text')
           .transition()
-          .duration(200)
-          .attr('fill', d.id === selectedId ? '#fff' : '#666')
-          .attr('dy', -20);
+          .duration(300)
+          .attr('fill', isSelected ? '#fff' : '#666')
+          .attr('dy', isRoot ? -36 : (isSelected ? -30 : -24))
+          .style('font-size', isRoot ? '16px' : '10px');
 
         // Reset all links
         link.transition()
-          .duration(300)
-          .attr('stroke', 'rgba(255,255,255,0.15)')
+          .duration(600)
+          .attr('stroke', 'rgba(255,255,255,0.06)')
           .attr('stroke-width', 1.5)
           .attr('opacity', 1)
-          .attr('marker-end', 'url(#arrowhead)');
+          .attr('marker-end', (l: any) => `url(#arrowhead-${l.source.id})`);
       })
       .on('mousemove', (event: any) => {
         setMousePos({ x: event.clientX, y: event.clientY });
@@ -200,24 +227,93 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
 
     // Node Circle
     node.append('circle')
-      .attr('r', (d: Node) => d.id === selectedId ? 10 : 6)
-      .attr('fill', (d: Node) => d.id === selectedId ? '#f97316' : '#333')
+      .attr('r', (d: Node) => {
+        if (d.id === 'heavy-metal') return 20;
+        if (d.id === selectedId) return 16;
+        return 8;
+      })
+      .attr('fill', (d: Node) => d.id === selectedId ? '#f97316' : '#111')
       .attr('stroke', (d: Node) => d.id === selectedId ? '#f97316' : '#111')
-      .attr('stroke-width', 2)
+      .attr('stroke-width', (d: Node) => d.id === selectedId ? 3 : 2)
       .style('filter', (d: Node) => d.id === selectedId ? 'drop-shadow(0 0 12px rgba(249,115,22,0.8))' : 'none');
 
     // Node Text
     node.append('text')
       .text((d: Node) => d.name.toUpperCase())
-      .attr('font-size', '10px')
+      .attr('font-size', (d: Node) => d.id === 'heavy-metal' ? '16px' : '10px')
       .attr('font-weight', '900')
       .attr('fill', (d: Node) => d.id === selectedId ? '#fff' : '#666')
       .attr('text-anchor', 'middle')
-      .attr('dy', -20)
+      .attr('dy', (d: Node) => {
+        if (d.id === 'heavy-metal') return -36;
+        if (d.id === selectedId) return -30;
+        return -24;
+      })
       .style('pointer-events', 'none')
       .style('font-family', 'var(--font-mono)')
       .style('letter-spacing', '0.2em')
-      .style('text-shadow', '0 2px 4px rgba(0,0,0,0.5)');
+      .style('text-shadow', '0 2px 4px rgba(0,0,0,0.8)');
+
+    // Flow Animation Timer
+    const particleTimer = d3.timer((elapsed) => {
+      if (!selectedId) {
+        particlesG.selectAll('*').remove();
+        return;
+      }
+
+      // Find links where the target is the selected genre
+      const activeLinks = data.links.filter((l: any) => {
+        const targetId = (l.target && typeof l.target === 'object') ? l.target.id : l.target;
+        return targetId === selectedId;
+      });
+
+      const particlesData: any[] = [];
+      
+      activeLinks.forEach((l: any) => {
+        const sx = l.source.x;
+        const sy = l.source.y;
+        const tx = l.target.x;
+        const ty = l.target.y;
+
+        if (sx === undefined || sy === undefined || tx === undefined || ty === undefined) return;
+
+        // Number of arrowheads in flow
+        const numParticles = 6;
+        for (let i = 0; i < numParticles; i++) {
+          const offset = i / numParticles;
+          const t = ((elapsed / 2500) + offset) % 1; // Movement speed
+          
+          // Position along the link path
+          const x = sx + (tx - sx) * t;
+          const y = sy + (ty - sy) * t;
+          
+          // Angle of rotation
+          const angle = Math.atan2(ty - sy, tx - sx) * 180 / Math.PI;
+
+          const sourceId = (l.source && typeof l.source === 'object') ? l.source.id : l.source;
+          const targetId = (l.target && typeof l.target === 'object') ? l.target.id : l.target;
+
+          particlesData.push({
+            id: `${sourceId}-${targetId}-${i}`,
+            x, y, angle,
+            color: (l.source && typeof l.source === 'object') ? l.source.color : '#f97316'
+          });
+        }
+      });
+
+      const selection = particlesG.selectAll('path')
+        .data(particlesData, (d: any) => d.id);
+
+      selection.enter()
+        .append('path')
+        .attr('d', 'M -4,-3 L 4,0 L -4,3 Z') // Refined arrowhead size
+        .attr('opacity', 0.9)
+        .merge(selection as any)
+        .attr('transform', d => `translate(${d.x},${d.y}) rotate(${d.angle})`)
+        .attr('fill', d => d.color);
+
+      selection.exit().remove();
+    });
 
     simulation.on('tick', () => {
       link
@@ -231,6 +327,7 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
 
     return () => {
       simulation.stop();
+      particleTimer.stop();
     };
   }, [data, selectedId, onSelectGenre]);
 

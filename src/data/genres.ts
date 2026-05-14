@@ -293,5 +293,137 @@ export const GENRES: Genre[] = [
     scales: ['Dorian', 'Phrygian', 'Chromatic'],
     influences: ['heavy-metal', 'thrash-metal', 'glam-metal'],
     color: '#059669'
+  },
+  {
+    id: 'groove-metal',
+    name: 'Groove Metal',
+    description: 'Riff-uri percutante, tempo-uri medii și o concentrare pe ritm și "groove", păstrând în același timp agresivitatea thrash-ului.',
+    history: 'A apărut la începutul anilor 90 ca o evoluție a thrash metalului. Pantera a definit genul prin albumul "Cowboys from Hell", punând accent pe forța brută și pe riff-uri care te fac să te miști (groove), în detrimentul vitezei pure a thrash-ului.',
+    bands: ['Pantera', 'Exhorder', 'Machine Head', 'Sepultura', 'Lamb of God'],
+    songs: [
+      { 
+        title: 'Walk', 
+        artist: 'Pantera',
+        albumCover: 'https://tse3.mm.bing.net/th/id/OIP.ShRJzxC7PLTIqsWmRYnZjwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Davidian', 
+        artist: 'Machine Head',
+        albumCover: 'hhttps://upload.wikimedia.org/wikipedia/en/5/51/Machine_Head_-_Burn_My_Eyes.jpg'
+      }
+    ],
+    scales: ['Minor Pentatonic', 'Blues Scale', 'Chromatic'],
+    influences: ['thrash-metal', 'heavy-metal'],
+    color: '#b91c1c'
+  },
+  {
+    id: 'gothic-metal',
+    name: 'Gothic Metal',
+    description: 'Atmosferă întunecată, melancolică, combinând greutatea doom metalului cu estetica gotică.',
+    history: 'S-a dezvoltat la începutul anilor 90, derivând din death/doom metal. Pionieri precum Paradise Lost au introdus voci feminine și clape, creând un sunet romantic dar tragic. Type O Negative a adus o abordare mai baritonă și satirică.',
+    bands: ['Type O Negative', 'Paradise Lost', 'My Dying Bride', 'Tiamat', 'Theatre of Tragedy'],
+    songs: [
+      { 
+        title: 'Black No. 1', 
+        artist: 'Type O Negative',
+        albumCover: 'https://i.discogs.com/d29JF6fMGL6Sw0GTz3ijrUdVnge79KK1DOlvo99zYgU/rs:fit/g:sm/q:90/h:606/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1MjQy/NjMtMTM2NzMzMTA3/OC03OTc4LmpwZWc.jpeg'
+      },
+      { 
+        title: 'Gothic', 
+        artist: 'Paradise Lost',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.2DDyGvrAX5LNXI9TGN9PXgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Natural Minor', 'Harmonic Minor', 'Phrygian'],
+    influences: ['doom-metal', 'death-metal'],
+    color: '#4c1d95'
+  },
+  {
+    id: 'funk-metal',
+    name: 'Funk Metal',
+    description: 'Slap bass, ritmuri sincopate de funk fuzionate cu chitări grele de metal și energie punk.',
+    history: 'A explodat la sfârșitul anilor 80. Trupe precum Faith No More și Primus au sfidat barierele prin introducerea elementelor de funk și jazz în contextul metalului, oferind o alternativă distractivă și tehnică la subgenurile extrem de serioase.',
+    bands: ['Faith No More', 'Primus', 'Living Colour', 'Infectious Grooves'],
+    songs: [
+      { 
+        title: 'Epic', 
+        artist: 'Faith No More',
+        albumCover: 'https://th.bing.com/th/id/R.1505c764f86d14c90bc06139040e481d?rik=C7LTb6BPcFO5jg&pid=ImgRaw&r=0' 
+      },
+      { 
+        title: 'Jerry Was a Race Car Driver', 
+        artist: 'Primus',
+        albumCover: 'https://tse2.mm.bing.net/th/id/OIP.wotJnFlG1z2pBhiU7yqMbAHaHO?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Dorian', 'Mixolydian', 'Blues Scale'],
+    influences: ['heavy-metal', 'alternative-metal'],
+    color: '#fbbf24'
+  },
+  {
+    id: 'rap-metal',
+    name: 'Rap Metal',
+    description: 'Voci de tip rap peste riff-uri grele de metal, adesea cu un mesaj politic sau social puternic.',
+    history: 'Pionierat prin colaborări precum Anthrax cu Public Enemy, genul a atins maturitatea prin Rage Against the Machine la începutul anilor 90, îmbinând agresivitatea urbană cu puterea metalului.',
+    bands: ['Rage Against the Machine', 'Body Count', 'Stuck Mojo', 'Anthrax'],
+    songs: [
+      { 
+        title: 'Killing in the Name', 
+        artist: 'Rage Against the Machine',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.ccGOhySMf6simb6qjia1hAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Bulls on Parade', 
+        artist: 'Rage Against the Machine',
+        albumCover: 'https://i.discogs.com/WcWys_eppf15DEKbdrRemVILu_n0sYq8O89j8h2U6Q4/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyODkw/MjktMTQzMTQ4Mzkx/MS0yMDQ1LmpwZWc.jpeg'
+      }
+    ],
+    scales: ['Minor Pentatonic', 'Phrygian', 'Chromatic'],
+    influences: ['thrash-metal', 'alternative-metal'],
+    color: '#f43f5e'
+  },
+  {
+    id: 'nu-metal',
+    name: 'Nu Metal',
+    description: 'Chitări down-tuned, elemente de hip-hop, industrial și grunge, cu un accent pe starea emoțională și catharsis.',
+    history: 'A apărut la mijlocul anilor 90 prin debutul trupei Korn. A devenit cel mai popular subgen de metal la sfârșitul anilor 90, introducendo elemente de platane (turntables) și o estetică vestimentară inspirată de cultura stradală.',
+    bands: ['Korn', 'Deftones', 'Linkin Park', 'Slipknot', 'Limp Bizkit'],
+    songs: [
+      { 
+        title: 'Blind', 
+        artist: 'Korn',
+        albumCover: 'https://th.bing.com/th/id/OIP._q1LuEV2Dhj2xU6btVjJ6QHaHa?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'In the End', 
+        artist: 'Linkin Park',
+        albumCover: 'https://tse2.mm.bing.net/th/id/OIP.KJtA4Trox54EMQQe628D9QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Phrygian', 'Aeolian', 'Locrian', 'Chromatic'],
+    influences: ['alternative-metal', 'groove-metal', 'funk-metal', 'rap-metal'],
+    color: '#22c55e'
+  },
+  {
+    id: 'ndh',
+    name: 'Neue Deutsche Härte',
+    description: 'Metal industrial german caracterizat prin riff-uri repetitive, grele, voci baritone și o estetică marțială.',
+    history: 'S-a cristalizat în Germania în anii 90. Rammstein a devenit vârful de lance internațional al genului, combinând elemente de techno, industrial și hard rock într-un format vizual copleșitor.',
+    bands: ['Rammstein', 'Oomph!', 'Eisbrecher', 'Megaherz', 'Die Krupps'],
+    songs: [
+      { 
+        title: 'Du Hast', 
+        artist: 'Rammstein',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.-_u-eyISMl47Ofl0T52QRwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Augen Auf!', 
+        artist: 'Oomph!',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.hyN_EjlIuvPvI6W6r26sXwHaGg?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Minor Scales', 'Chromatic', 'Major (for contrast)'],
+    influences: ['alternative-metal', 'groove-metal'],
+    color: '#78716c'
   }
 ];
