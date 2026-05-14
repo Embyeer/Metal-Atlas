@@ -33,8 +33,8 @@ export default function App() {
           <div className="w-8 h-8 bg-orange-600 rounded-sm rotate-45 flex items-center justify-center shadow-lg shadow-orange-900/50">
             <span className="text-black font-black -rotate-45">M</span>
           </div>
-          <h1 className="text-2xl italic-black">
-            METAL-GRAPH <span className="text-orange-500 not-italic tracking-normal text-sm font-bold ml-1">v1.0</span>
+          <h1 className="text-2xl italic-black uppercase tracking-wider">
+            Metal Atlas <span className="text-orange-500 not-italic tracking-normal text-xs font-bold ml-1 opacity-50">v1.1</span>
           </h1>
         </div>
 
@@ -107,7 +107,7 @@ export default function App() {
       {/* Footer */}
       <footer className="h-12 border-t border-white/10 bg-black flex-shrink-0 flex items-center justify-between px-8 text-[10px] uppercase tracking-tighter text-zinc-500 font-mono">
         <div>SYS_READY: NODE_THRASH_CONNECTED</div>
-        <div className="hidden sm:block">FILE: METAL_EVOLUTION_DATABASE.LOG</div>
+        <div className="hidden sm:block">FILE: METAL_ATLAS_ROOT.LOG</div>
         <div>AUTH: MATE-INFO_PROGRAMMER_X</div>
       </footer>
     </div>

@@ -1,6 +1,6 @@
-# 🎸 Metal-Graph
+# 🎸 Metal Atlas
 
-**Metal-Graph** este o platformă web interactivă concepută pentru a cartografia complexitatea genului Heavy Metal. Proiectul explorează conexiunile dintre subgenuri, oferind utilizatorilor o perspectivă educativă și tehnică asupra istoriei și structurii muzicale a metalului.
+**Metal Atlas** este o platformă web interactivă concepută pentru a cartografia complexitatea genului Heavy Metal. Proiectul explorează conexiunile dintre subgenuri, oferind utilizatorilor o perspectivă educativă și tehnică asupra istoriei și structurii muzicale a metalului.
 
 ## 🚀 Obiectivele Proiectului
 Acest proiect a fost creat pentru **Olimpiada de Inovare și Creație Digitală (InfoEducație)** și își propune:
