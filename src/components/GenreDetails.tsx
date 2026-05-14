@@ -91,12 +91,6 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
               className="w-1.5 h-6 rounded-full" 
               style={{ backgroundColor: genre.color }}
             />
-            <div className="p-1 px-3 bg-white/5 border border-white/10 rounded text-zinc-400 text-[9px] font-black uppercase tracking-[0.4em]">
-              Node Index: {genre.id.toUpperCase()}
-            </div>
-            <div className="p-1 px-3 bg-orange-500/10 border border-orange-500/20 rounded text-orange-500 text-[9px] font-black uppercase tracking-[0.4em]">
-              Archive 0x{genre.id.length}
-            </div>
           </div>
           
           <motion.h2 
@@ -137,7 +131,7 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
           {/* Essential Listening */}
           <section className="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 backdrop-blur-sm">
             <h3 className="text-[10px] font-bold text-orange-500 uppercase tracking-[0.25em] mb-10 flex items-center gap-3">
-               <Music size={14} /> Sonic Blueprints // Essential Data
+               <Music size={14} /> Emblematic Songs
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {genre.songs.map((song, i) => (
@@ -161,41 +155,11 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
               ))}
             </div>
           </section>
-        </div>
 
-        {/* Right Column: Technical Stats */}
-        <div className="lg:col-span-5 space-y-8">
-          {/* Musical Theory */}
-          <section className="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 backdrop-blur-sm overflow-hidden">
-            <h3 className="text-[10px] font-bold text-orange-500 uppercase tracking-[0.25em] mb-10 flex items-center gap-3">
-              <Zap size={14} /> Harmonic DNA & Scaling
-            </h3>
-            <div className="space-y-10">
-              {genre.scales.map((scale, i) => {
-                const patterns = SCALE_PATTERNS[scale];
-                return (
-                  <div key={scale} className="relative">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="flex flex-col gap-1 items-center">
-                        {[1, 2, 3].map(dot => (
-                          <div key={dot} className={`w-1 h-1 rounded-full ${i % 2 === 0 ? 'bg-orange-500' : 'bg-zinc-700'}`} />
-                        ))}
-                      </div>
-                      <span className="text-[11px] font-black text-zinc-100 uppercase tracking-[0.3em]">{scale}</span>
-                    </div>
-                    <div className="bg-black/40 p-1 rounded-xl border border-white/5">
-                      {patterns && <FretboardDiagram patterns={patterns} />}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-
-          {/* Icons (Bands) */}
+          {/* Important Bands */}
           <section className="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 backdrop-blur-sm">
             <h3 className="text-[10px] font-bold text-orange-500 uppercase tracking-[0.25em] mb-10 flex items-center gap-3">
-               <Layers size={14} /> Key Personnel & Units
+               <Layers size={14} /> Important Bands
             </h3>
             <div className="flex flex-wrap gap-2">
               {genre.bands.map(band => (
@@ -243,6 +207,36 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
                 <p className="text-[9px] text-zinc-600 font-bold uppercase tracking-[0.5em]">No upstream parent records detected.</p>
               </div>
             )}
+          </section>
+        </div>
+
+        {/* Right Column: Technical Stats */}
+        <div className="lg:col-span-5 space-y-8">
+          {/* Musical Theory */}
+          <section className="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 backdrop-blur-sm overflow-hidden">
+            <h3 className="text-[10px] font-bold text-orange-500 uppercase tracking-[0.25em] mb-10 flex items-center gap-3">
+              <Zap size={14} /> Harmonic DNA & Scaling
+            </h3>
+            <div className="space-y-10">
+              {genre.scales.map((scale, i) => {
+                const patterns = SCALE_PATTERNS[scale];
+                return (
+                  <div key={scale} className="relative">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="flex flex-col gap-1 items-center">
+                        {[1, 2, 3].map(dot => (
+                          <div key={dot} className={`w-1 h-1 rounded-full ${i % 2 === 0 ? 'bg-orange-500' : 'bg-zinc-700'}`} />
+                        ))}
+                      </div>
+                      <span className="text-[11px] font-black text-zinc-100 uppercase tracking-[0.3em]">{scale}</span>
+                    </div>
+                    <div className="bg-black/40 p-1 rounded-xl border border-white/5">
+                      {patterns && <FretboardDiagram patterns={patterns} />}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </section>
         </div>
       </div>
