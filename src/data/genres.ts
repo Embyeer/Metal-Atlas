@@ -425,5 +425,291 @@ export const GENRES: Genre[] = [
     scales: ['Minor Scales', 'Chromatic', 'Major (for contrast)'],
     influences: ['alternative-metal', 'groove-metal'],
     color: '#78716c'
+  },
+  {
+    id: 'avant-garde-metal',
+    name: 'Avant-garde Metal',
+    description: 'Experimental, neconvențional și avangardist, depășind limitele metalului tradițional prin utilizarea elementelor de jazz, muzică clasică sau electronică.',
+    history: 'S-a format la sfârșitul anilor 80 prin trupe precum Celtic Frost (perioada "Into the Pandemonium"). Genul se caracterizează prin refuzul de a respecta structurile standard, folosind instrumente atipice și tehnici vocale experimentale.',
+    bands: ['Arcturus', 'Mr. Bungle', 'Borgir', 'Unexpect', 'Solefald'],
+    songs: [
+      { 
+        title: 'The Chaos Path', 
+        artist: 'Arcturus',
+        albumCover: 'https://th.bing.com/th/id/R.947ee0465cd631a80794ccc8c669d1cf?rik=T4Dx2creaD%2bilA&pid=ImgRaw&r=0'
+      },
+      { 
+        title: 'Retrovertigo', 
+        artist: 'Mr. Bungle',
+        albumCover: 'https://tse3.mm.bing.net/th/id/OIP.770Uq9bZJPOKXD_8dK-NTAHaHT?w=600&h=592&rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Atoll', 'Whole Tone', 'Chromatic', 'Experimental'],
+    influences: ['progressive-metal', 'alternative-metal'],
+    color: '#34d399'
+  },
+  {
+    id: 'christian-metal',
+    name: 'Christian Metal',
+    description: 'Caracterizat prin mesaje lirice creștine, acoperind o gamă largă de stiluri de la heavy la metal extrem.',
+    history: 'Pionierat în anii 70 de trupe precum Resurrection Band, genul a explodat în anii 80 cu Stryper. A dovedit că agresivitatea metalului poate fi combinată cu mesaje de credință, creând o subcultură vastă și dedicată.',
+    bands: ['Stryper', 'The Devil Wears Prada', 'Skillet', 'August Burns Red', 'Mortification'],
+    songs: [
+      { 
+        title: 'To Hell with the Devil', 
+        artist: 'Stryper',
+        albumCover: 'https://i.discogs.com/ELdwmp7DAOoMxGx8VljxeFXvt8WRldigsBZdPIu9CAI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwNzU4/NDEtMTMxNDU2MDgx/MS5qcGVn.jpeg'
+      },
+      { 
+        title: 'Comatose', 
+        artist: 'Skillet',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.7At4Cgb1MINQmggqHVnPMgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Major Scale', 'Natural Minor'],
+    influences: ['heavy-metal', 'thrash-metal'],
+    color: '#facc15'
+  },
+  {
+    id: 'crust-punk',
+    name: 'Crust Punk',
+    description: 'O fuziune brutală între hardcore punk și metal extrem (thrash/death), cu o estetică murdară și mesaje politice radicale.',
+    history: 'A apărut în Marea Britanie la mijlocul anilor 80. Trupe ca Amebix și Antisect au preluat greutatea metalică și au combinat-o cu viteza punk-ului, creând un sunet dens, distorsionat și adesea apocaliptic.',
+    bands: ['Amebix', 'Antisect', 'Extreme Noise Terror', 'Discharge', 'Dystopia'],
+    songs: [
+      { 
+        title: 'Arise', 
+        artist: 'Amebix',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.WBeI6onuBARRCQcYee-nlgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Deceived', 
+        artist: 'Extreme Noise Terror',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.k_G-xNdYLdkFtUf5JWFBdAHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Minor Pentatonic', 'Chromatic'],
+    influences: ['thrash-metal', 'heavy-metal'],
+    color: '#44403c'
+  },
+  {
+    id: 'biker-metal',
+    name: 'Biker Metal',
+    description: 'Fuziune de hard rock, heavy metal și elemente de punk, strâns legată de cultura motocicliștilor și rebeliunea urbană.',
+    history: 'Motörhead este chintesența acestui gen, combinând viteza și atitudinea punk cu forța heavy metalului. S-a dezvoltat în anii 70 și 80 ca un stil de viață, axat pe libertate, drumuri lungi și sunetul "murdar" al chitarelor.',
+    bands: ['Motörhead', 'Orange Goblin', 'Saxon', 'Girlschool', 'Black Label Society'],
+    songs: [
+      { 
+        title: 'Overkill', 
+        artist: 'Motörhead',
+        albumCover: 'https://th.bing.com/th/id/R.cb83aeab710b8f41ad1169a6e3dc6fa0?rik=yc%2fq2l342FyEvQ&pid=ImgRaw&r=0'
+      },
+      { 
+        title: 'Stillborn', 
+        artist: 'Black Label Society',
+        albumCover: 'https://th.bing.com/th/id/R.8fe29b3357c46c21ba5014aa94a8036d?rik=HlNUXyZJkyuHfw&riu=http%3a%2f%2fimages.genius.com%2f3700d70dcae2a6fc21765d46541c0328.640x640x1.jpg&ehk=vBTfP3UT3fK0yknci%2fH9y1KWm2m%2fbJoqwffjVtrKZ3w%3d&risl=&pid=ImgRaw&r=0'
+      }
+    ],
+    scales: ['Blues Scale', 'Minor Pentatonic'],
+    influences: ['heavy-metal', 'speed-metal'],
+    color: '#7f1d1d'
+  },
+  {
+    id: 'extreme-metal',
+    name: 'Extreme Metal',
+    description: 'Termen umbrelă pentru subgenurile cele mai abrazive și intense: death, black, thrash și doom metal.',
+    history: 'S-a cristalizat la mijlocul anilor 80 ca o mișcare subterană care dorea să împingă limitele vitezei și brutalității dincolo de heavy metalul tradițional. A dus la formarea unor scene globale cu coduri estetice și sonore stricte.',
+    bands: ['Possessed', 'Hellhammer', 'Venom', 'Bathory', 'Celtic Frost'],
+    songs: [
+      { 
+        title: 'The Exorcist', 
+        artist: 'Possessed',
+        albumCover: 'https://i.discogs.com/jd6fZUkHO1nYTkwKmk50Qf0T18IEYqFzNG8R16yjqoM/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMzg4/NjgtMTcwNTY0NTUz/Ny02Mjk5LmpwZWc.jpeg'
+      },
+      { 
+        title: 'Satan My Master', 
+        artist: 'Bathory',
+        albumCover: 'https://tse2.mm.bing.net/th/id/OIP.SaQxLu0uENr1WwgkFj1dpQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Locrian', 'Phrygian', 'Chromatic'],
+    influences: ['thrash-metal', 'black-metal', 'death-metal', 'doom-metal'],
+    color: '#0c0a09'
+  },
+  {
+    id: 'folk-metal',
+    name: 'Folk Metal',
+    description: 'Metal care încorporează instrumente tradiționale, melodii populare și teme lirice despre natură, mitologie și istorie locală.',
+    history: 'A apărut la începutul anilor 90, Skyclad fiind pionierii care au introdus vioara în metal. Ulterior, trupe din Scandinavia au combinat black metalul cu folclorul nordic, creând o scenă imensă care folosește flaute, cimpoaie și harpe.',
+    bands: ['Eluveitie', 'Korpiklaani', 'Ensiferum', 'In Extremo', 'Amorphis'],
+    songs: [
+      { 
+        title: 'Inis Mona', 
+        artist: 'Eluveitie',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.eMh_9LvBf_EvJ5o29sZwOwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Vodka', 
+        artist: 'Korpiklaani',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.EGTnrJffZJy4v1fU7SEsbwHaGS?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Mixolydian', 'Dorian', 'Minor Pentatonic', 'Traditional Folk Scales'],
+    influences: ['heavy-metal', 'black-metal', 'death-metal'],
+    color: '#166534'
+  },
+  {
+    id: 'grindcore',
+    name: 'Grindcore',
+    description: 'Cea mai extremă fuziune între death metal și hardcore punk, caracterizată prin piese foarte scurte, viteze halucinante și blast-beats constante.',
+    history: 'S-a născut în Marea Britanie la mijlocul anilor 80. Napalm Death a definit genul prin albumul "Scum", reducând piesele la esența brutalității, adesea durând doar câteva secunde.',
+    bands: ['Napalm Death', 'Carcass', 'Pig Destroyer', 'Repulsion', 'Nasum'],
+    songs: [
+      { 
+        title: 'You Suffer', 
+        artist: 'Napalm Death',
+        albumCover: 'https://f4.bcbits.com/img/a1976444951_10.jpg'
+      },
+      { 
+        title: 'Prowler in the Yard', 
+        artist: 'Pig Destroyer',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.oFNNaXiDwLlz2XI87xu96QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Chromatic', 'None (Noise-focused)'],
+    influences: ['death-metal', 'thrash-metal'],
+    color: '#991b1b'
+  },
+  {
+    id: 'kawaii-metal',
+    name: 'Kawaii Metal',
+    description: 'Fuziune între idol pop-ul japonez și heavy metal, rezultând un stil contrastant dar extrem de energic.',
+    history: 'A fost creat de trupa Babymetal la începutul anilor 2010. Combină coregrafii pop, voci melodice "drăguțe" (kawaii) peste un fundament instrumental de power, thrash sau death metal extrem de tehnic.',
+    bands: ['Babymetal', 'Ladybaby', 'PassCode', 'Hanabie.'],
+    songs: [
+      { 
+        title: 'Gimme Chocolate!!', 
+        artist: 'Babymetal',
+        albumCover: 'https://tse3.mm.bing.net/th/id/OIP.2JzM_QJF6qQP-hHa-ACHAQHaHW?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Nippon Manju', 
+        artist: 'Ladybaby',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.SahXR0ts73e48cIYmeE6uQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Major Scale', 'Mixolydian', 'Minor Pentatonic'],
+    influences: ['power-metal', 'thrash-metal', 'alternative-metal'],
+    color: '#f472b6'
+  },
+  {
+    id: 'latin-metal',
+    name: 'Latin Metal',
+    description: 'Metal care încorporează ritmuri, instrumentație și limbi latino-americane.',
+    history: 'A obținut recunoaștere globală prin Sepultura (perioada "Roots") și Puya. Combină percuția tribală și influențele salsa/merengue cu rigoarea metalului, explorând frecvent teme de identitate culturală și rezistență.',
+    bands: ['Sepultura', 'Puya', 'Ill Niño', 'Soulfly', 'A.N.I.M.A.L.'],
+    songs: [
+      { 
+        title: 'Roots Bloody Roots', 
+        artist: 'Sepultura',
+        albumCover: 'https://images.genius.com/31915631b54546f09263e140eca041a0.1000x1000x1.png'
+      },
+      { 
+        title: 'Oasis', 
+        artist: 'Puya',
+        albumCover: 'https://tse1.mm.bing.net/th/id/OIP.1U9V4vOaA5C_76eQGZWvugAAAA?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Phrygian', 'Dorian', 'Harmonic Minor', 'Latin Rhythms'],
+    influences: ['alternative-metal', 'thrash-metal', 'groove-metal'],
+    color: '#ea580c'
+  },
+  {
+    id: 'metalcore',
+    name: 'Metalcore',
+    description: 'Fuziune între extreme metal și hardcore punk, caracterizată prin utilizarea "breakdown-urilor" și alternanța dintre voci curate și țipete.',
+    history: 'A evoluat din scena hardcore a anilor 90 (Earth Crisis) și a explodat în anii 2000 prin trupe ca Killswitch Engage, care au încorporat mai multe melodii de tip Gothenburg death metal.',
+    bands: ['Killswitch Engage', 'As I Lay Dying', 'Avenged Sevenfold', 'Architects', 'Bring Me The Horizon'],
+    songs: [
+      { 
+        title: 'My Curse', 
+        artist: 'Killswitch Engage',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.ATgsQKbNWqSNL5oEi8vxbgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Unholy Confessions', 
+        artist: 'Avenged Sevenfold',
+        albumCover: 'https://images.genius.com/0737991205be311521d3b588efd8df65.1000x1000x1.jpg'
+      }
+    ],
+    scales: ['Minor Pentatonic', 'Aeolian', 'Phrygian'],
+    influences: ['thrash-metal', 'death-metal', 'alternative-metal'],
+    color: '#2563eb'
+  },
+  {
+    id: 'neoclassical-metal',
+    name: 'Neoclassical Metal',
+    description: 'Metal caracterizat prin virtuozitate extremă și utilizarea directă a formelor și melodiilor muzicii clasice.',
+    history: 'Popularizat de Yngwie Malmsteen în anii 80. Pune un accent imens pe tehnică, folosind arpegii rapide și game preluate de la compozitori precum Bach, Paganini sau Vivaldi într-un context de heavy metal.',
+    bands: ['Yngwie Malmsteen', 'Symphony X', 'Stratovarius', 'Jason Becker', 'Cacophony'],
+    songs: [
+      { 
+        title: 'Black Star', 
+        artist: 'Yngwie Malmsteen',
+        albumCover: 'https://th.bing.com/th/id/OIP.cEdSojeEnVdpWxNakY1OHQHaHW?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Far Beyond the Sun', 
+        artist: 'Yngwie Malmsteen',
+        albumCover: 'https://tse4.mm.bing.net/th/id/OIP.RnGz04j9wtwh62tskq7a1QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Harmonic Minor', 'Phrygian Dominant', 'Diminished arpeggios'],
+    influences: ['heavy-metal', 'power-metal', 'progressive-metal'],
+    color: '#8b5cf6'
+  },
+  {
+    id: 'post-metal',
+    name: 'Post-metal',
+    description: 'O formă expansivă de metal care îmbină post-rock-ul cu sludge-ul sau doom metalul, axată pe atmosferă, textură și crescendo-uri dinamice.',
+    history: 'A luat naștere la începutul anilor 2000 prin trupe precum Neurosis și Isis. Se distanțează de structurile vers-refren, preferând piese lungi, instrumentale sau cu voci sparse, care construiesc o stare de spirit imersivă.',
+    bands: ['Neurosis', 'Isis', 'Cult of Luna', 'Russian Circles', 'Pelican'],
+    songs: [
+      { 
+        title: 'The Eye of Every Storm', 
+        artist: 'Neurosis',
+        albumCover: 'https://tse1.explicit.bing.net/th/id/OIP.N1ag9UM6rAp60yVmR-Uo3wHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      },
+      { 
+        title: 'Panopticon', 
+        artist: 'Isis',
+        albumCover: 'https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/56/03/e4/5603e49c-ab33-05f9-9c54-606381901cd6/886445137057.jpg/1200x1200bf-60.jpg'
+      }
+    ],
+    scales: ['Dorian', 'Aeolian', 'Experimental tunings'],
+    influences: ['doom-metal', 'progressive-metal', 'alternative-metal'],
+    color: '#0f172a'
+  },
+  {
+    id: 'symphonic-metal',
+    name: 'Symphonic Metal',
+    description: 'Metal care încorporează elemente de orchestră, coruri și voci operatice (adesea feminine).',
+    history: 'A apărut la sfârșitul anilor 90, trupe precum Nightwish sau Within Temptation fuzionând puterea heavy metalului cu grandoarea muzicii de film și a operei. Se caracterizează prin aranjamente bogate și o atmosferă epică.',
+    bands: ['Nightwish', 'Within Temptation', 'Epica', 'Therion', 'Haggard'],
+    songs: [
+      { 
+        title: 'Ghost Love Score', 
+        artist: 'Nightwish',
+        albumCover: 'https://th.bing.com/th/id/R.7937e1a9960a339cd29fe8a47cab6d63?rik=cYZGC7N6o4z74A&pid=ImgRaw&r=0'
+      },
+      { 
+        title: 'Mother Earth', 
+        artist: 'Within Temptation',
+        albumCover: 'https://tse3.mm.bing.net/th/id/OIP.J2Xc1LiZbDdKUCY44KoQ9QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      }
+    ],
+    scales: ['Aeolian', 'Harmonic Minor', 'Classical Modes'],
+    influences: ['power-metal', 'gothic-metal', 'heavy-metal'],
+    color: '#4338ca'
   }
 ];

@@ -29,13 +29,15 @@ export default function App() {
     <div className="h-screen text-zinc-100 flex flex-col font-sans overflow-hidden bg-black">
       {/* Header */}
       <header className="h-16 flex-shrink-0 border-b border-white/10 bg-black/50 flex items-center justify-between px-8 backdrop-blur-md z-50">
-        <div className="flex items-center gap-4">
-          <div className="w-8 h-8 bg-orange-600 rounded-sm rotate-45 flex items-center justify-center shadow-lg shadow-orange-900/50">
-            <span className="text-black font-black -rotate-45">M</span>
-          </div>
-          <h1 className="text-2xl italic-black uppercase tracking-wider">
-            Metal Atlas <span className="text-orange-500 not-italic tracking-normal text-xs font-bold ml-1 opacity-50">v2.0</span>
-          </h1>
+        <div className="flex items-center gap-2">
+          <a href="https://www.fontspace.com/category/metallica" className="hover:opacity-80 transition-opacity">
+            <img 
+              src="https://see.fontimg.com/api/rf5/3wAM/ZGIwYjNiM2JiYTdhNGU3OTgyMGQ2MjMzYTE4MTk1NTMudHRm/TWV0YWwgQXRsYXM/vtks-rude-metal.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" 
+              alt="Metal Atlas Logo"
+              className="h-12 invert brightness-150 rendering-pixelated"
+            />
+          </a>
+          <span className="text-orange-500 text-[10px] font-bold opacity-50 self-end mb-2">v2.3</span>
         </div>
 
         <nav className="hidden md:flex items-center gap-8 text-[10px] uppercase tracking-[0.2em] font-bold">
@@ -52,7 +54,7 @@ export default function App() {
       </header>
 
       {/* Main Graph Area */}
-      <main className="flex-grow relative bg-grid">
+      <main className="flex-grow relative">
         <MetalGraph 
           selectedId={selectedGenreId || ''} 
           onSelectGenre={handleSelectGenre} 
@@ -101,9 +103,9 @@ export default function App() {
         </AnimatePresence>
 
         {/* Global UI Overlays */}
-        <div className="absolute bottom-8 left-8 p-4 bg-black/80 border border-white/10 rounded-lg backdrop-blur-md max-w-xs pointer-events-none">
-          <h3 className="text-[10px] font-bold text-orange-500 uppercase tracking-widest mb-2">Instructions</h3>
-          <p className="text-[10px] text-zinc-500 leading-relaxed uppercase">
+        <div className="absolute bottom-6 left-6 p-3 bg-black/80 border border-white/10 rounded-lg backdrop-blur-md max-w-[200px] pointer-events-none">
+          <h3 className="text-[9px] font-bold text-orange-500 uppercase tracking-widest mb-1">Instructions</h3>
+          <p className="text-[9px] text-zinc-500 leading-tight uppercase">
             Click nodes to explore DNA // Drag to navigate // Scroll to zoom // Influences are connected by nodes.
           </p>
         </div>

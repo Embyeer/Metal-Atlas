@@ -116,7 +116,6 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
           {/* History / Full Bio */}
           <section className="bg-zinc-900/40 border border-white/5 rounded-3xl p-8 backdrop-blur-sm relative overflow-hidden">
             <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none uppercase font-black text-4xl select-none">
-              HIST_DATA
             </div>
             <h3 className="text-[10px] font-bold text-orange-500 uppercase tracking-[0.25em] mb-10 flex items-center gap-3">
               <BookOpen size={14} /> Origins & Technical History

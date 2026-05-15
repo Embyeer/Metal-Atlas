@@ -12,6 +12,7 @@ interface Node extends d3.SimulationNodeDatum {
   id: string;
   name: string;
   color: string;
+  outDegree: number;
 }
 
 interface Link extends d3.SimulationLinkDatum<Node> {
@@ -26,11 +27,16 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
   const data = useMemo(() => {
-    const nodes: Node[] = GENRES.map(g => ({
-      id: g.id,
-      name: g.name,
-      color: g.color,
-    }));
+    const nodes: Node[] = GENRES.map(g => {
+      // Out-degree = how many genres list THIS genre as an influence
+      const outDegree = GENRES.filter(other => other.influences.includes(g.id)).length;
+      return {
+        id: g.id,
+        name: g.name,
+        color: g.color,
+        outDegree,
+      };
+    });
 
     const links: Link[] = [];
     GENRES.forEach(g => {
@@ -162,10 +168,11 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
         if (genre) setHoveredNode(genre);
         
         // Scale and highlight hovered node
+        const nodeSize = 10 + d.outDegree * 2.5;
         d3.select(event.currentTarget).select('circle')
           .transition()
           .duration(300)
-          .attr('r', 18)
+          .attr('r', nodeSize + 6)
           .attr('stroke', d.color)
           .attr('stroke-width', 4)
           .style('filter', `drop-shadow(0 0 15px ${d.color})`);
@@ -174,20 +181,31 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
           .transition()
           .duration(300)
           .attr('fill', '#fff')
-          .attr('dy', -32)
+          .attr('dy', -(nodeSize + 16))
           .style('font-size', '13px');
 
-        // Highlight and expand incoming links pointing to this node
+        // Highlight and expand incoming links pointing to this node (Parents)
         link.filter((l: any) => l.target.id === d.id)
           .transition()
           .duration(400)
           .attr('stroke', (l: any) => l.source.color)
           .attr('stroke-width', 4)
+          .attr('stroke-dasharray', 'none')
+          .attr('opacity', 1)
+          .attr('marker-end', (l: any) => `url(#arrowhead-active-${l.source.id})`);
+
+        // Highlight and expand outgoing links from this node (Children/Sons)
+        link.filter((l: any) => l.source.id === d.id)
+          .transition()
+          .duration(400)
+          .attr('stroke', d.color)
+          .attr('stroke-width', 3)
+          .attr('stroke-dasharray', '6,4')
           .attr('opacity', 1)
           .attr('marker-end', (l: any) => `url(#arrowhead-active-${l.source.id})`);
         
         // Dim other links
-        link.filter((l: any) => l.target.id !== d.id)
+        link.filter((l: any) => l.target.id !== d.id && l.source.id !== d.id)
           .transition()
           .duration(400)
           .attr('opacity', 0.02);
@@ -197,11 +215,13 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
         
         // Reset node style
         const isSelected = d.id === selectedId;
-        const isRoot = d.id === 'heavy-metal';
+        const baseSize = 8 + d.outDegree * 2;
+        const finalSize = isSelected ? baseSize + 6 : baseSize;
+
         d3.select(event.currentTarget).select('circle')
           .transition()
           .duration(300)
-          .attr('r', isRoot ? 20 : (isSelected ? 16 : 8))
+          .attr('r', finalSize)
           .attr('stroke', isSelected ? '#f97316' : '#111')
           .attr('stroke-width', isSelected ? 3 : 2)
           .style('filter', isSelected ? 'drop-shadow(0 0 12px rgba(249,115,22,0.8))' : 'none');
@@ -210,14 +230,15 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
           .transition()
           .duration(300)
           .attr('fill', isSelected ? '#fff' : '#666')
-          .attr('dy', isRoot ? -36 : (isSelected ? -30 : -24))
-          .style('font-size', isRoot ? '16px' : '10px');
+          .attr('dy', -(finalSize + 12))
+          .style('font-size', d.id === 'heavy-metal' ? '16px' : (isSelected ? '12px' : '10px'));
 
         // Reset all links
         link.transition()
           .duration(600)
           .attr('stroke', 'rgba(255,255,255,0.06)')
           .attr('stroke-width', 1.5)
+          .attr('stroke-dasharray', 'none')
           .attr('opacity', 1)
           .attr('marker-end', (l: any) => `url(#arrowhead-${l.source.id})`);
       })
@@ -228,9 +249,9 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
     // Node Circle
     node.append('circle')
       .attr('r', (d: Node) => {
-        if (d.id === 'heavy-metal') return 20;
-        if (d.id === selectedId) return 16;
-        return 8;
+        const baseSize = 8 + d.outDegree * 2;
+        if (d.id === selectedId) return baseSize + 6;
+        return baseSize;
       })
       .attr('fill', (d: Node) => d.id === selectedId ? '#f97316' : '#111')
       .attr('stroke', (d: Node) => d.id === selectedId ? '#f97316' : '#111')
@@ -240,14 +261,14 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
     // Node Text
     node.append('text')
       .text((d: Node) => d.name.toUpperCase())
-      .attr('font-size', (d: Node) => d.id === 'heavy-metal' ? '16px' : '10px')
+      .attr('font-size', (d: Node) => d.id === 'heavy-metal' ? '16px' : (d.id === selectedId ? '12px' : '10px'))
       .attr('font-weight', '900')
       .attr('fill', (d: Node) => d.id === selectedId ? '#fff' : '#666')
       .attr('text-anchor', 'middle')
       .attr('dy', (d: Node) => {
-        if (d.id === 'heavy-metal') return -36;
-        if (d.id === selectedId) return -30;
-        return -24;
+        const baseSize = 8 + d.outDegree * 2;
+        const sizeOffset = d.id === selectedId ? 6 : 0;
+        return -(baseSize + sizeOffset + 12);
       })
       .style('pointer-events', 'none')
       .style('font-family', 'var(--font-mono)')
@@ -332,8 +353,17 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
   }, [data, selectedId, onSelectGenre]);
 
   return (
-    <div ref={containerRef} className="w-full h-full relative cursor-grab active:cursor-grabbing">
-      <svg ref={svgRef} className="w-full h-full" />
+    <div ref={containerRef} className="w-full h-full relative cursor-grab active:cursor-grabbing overflow-hidden">
+      {/* Background Logo */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.5] pointer-events-none select-none">
+        <img 
+          src="https://see.fontimg.com/api/rf5/3wAM/ZGIwYjNiM2JiYTdhNGU3OTgyMGQ2MjMzYTE4MTk1NTMudHRm/TWV0YWwgQXRsYXM/vtks-rude-metal.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" 
+          alt=""
+          className="w-[80%] max-w-5xl invert brightness-150 rendering-pixelated"
+        />
+      </div>
+
+      <svg ref={svgRef} className="w-full h-full relative z-10" />
       
       {/* Tooltip */}
       <AnimatePresence>
