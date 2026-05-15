@@ -357,7 +357,7 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
       {/* Background Logo */}
       <div className="absolute inset-0 flex items-center justify-center opacity-[0.5] pointer-events-none select-none">
         <img 
-          src="https://see.fontimg.com/api/rf5/3wAM/ZGIwYjNiM2JiYTdhNGU3OTgyMGQ2MjMzYTE4MTk1NTMudHRm/TWV0YWwgQXRsYXM/vtks-rude-metal.png?r=fs&h=65&w=1000&fg=000000&bg=FFFFFF&tb=1&s=65" 
+          src="https://i.ibb.co/QvPk6LXQ/text-1778831022265.png" 
           alt=""
           className="w-[80%] max-w-5xl invert brightness-150 rendering-pixelated"
         />
