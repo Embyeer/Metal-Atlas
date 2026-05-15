@@ -355,11 +355,11 @@ const MetalGraph: React.FC<MetalGraphProps> = ({ selectedId, onSelectGenre }) =>
   return (
     <div ref={containerRef} className="w-full h-full relative cursor-grab active:cursor-grabbing overflow-hidden">
       {/* Background Logo */}
-      <div className="absolute inset-0 flex items-center justify-center opacity-[0.5] pointer-events-none select-none">
+      <div className="absolute inset-0 flex items-center justify-center opacity-[0.05] pointer-events-none select-none">
         <img 
           src="https://i.ibb.co/QvPk6LXQ/text-1778831022265.png" 
           alt=""
-          className="w-[80%] max-w-5xl invert brightness-150 rendering-pixelated"
+          className="w-[60%] max-w-3xl invert brightness-150 rendering-pixelated"
         />
       </div>
 
