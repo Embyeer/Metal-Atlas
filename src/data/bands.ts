@@ -33,7 +33,7 @@ export const bands: Band[] = [
       { title: 'Metallica (The Black Album)', year: 1991 },
       { title: '72 Seasons', year: 2023 }
     ],
-    imageUrl: 'https://discobole.gr/wp-content/uploads/2023/06/metallica-best-albums.jpg'
+    imageUrl: 'https://www.rollingstone.com/wp-content/uploads/2023/03/metallica-72-seasons.jpg?w=1581&h=1054&crop=1'
   },
   {
     id: 'iron-maiden',
@@ -609,7 +609,7 @@ export const bands: Band[] = [
       { title: 'Carolus Rex', year: 2012 },
       { title: 'The War to End All Wars', year: 2022 }
     ],
-    imageUrl: 'https://static.wikia.nocookie.net/sabaton/images/2/25/Sabatonphoto.jpg/revision/latest?cb=20200130230736'
+    imageUrl: 'https://www.breathemein.net/wp-content/uploads/2013/03/Sabaton.jpg'
   },
   {
     id: 'avenged-sevenfold',
@@ -642,7 +642,7 @@ export const bands: Band[] = [
       { title: 'Angel Dust', year: 1992 },
       { title: 'King for a Day... Fool for a Lifetime', year: 1995 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://f4.bcbits.com/img/0018053356_10.jpg'
   },
   {
     id: 'van-halen',
@@ -658,7 +658,7 @@ export const bands: Band[] = [
       { title: '1984', year: 1984 },
       { title: '5150', year: 1986 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://igormiranda.com.br/wp-content/uploads/2022/07/van-halen-formacao-original.jpg'
   },
   {
     id: 'motley-crue',
@@ -674,7 +674,7 @@ export const bands: Band[] = [
       { title: 'Theatre of Pain', year: 1985 },
       { title: 'Dr. Feelgood', year: 1989 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i.pinimg.com/1200x/71/d9/19/71d919f2467be42ec460735093ff4877.jpg'
   },
   {
     id: 'venom',
@@ -690,7 +690,7 @@ export const bands: Band[] = [
       { title: 'Black Metal', year: 1982 },
       { title: 'At War with Satan', year: 1984 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://vinyl-records.nl/nwobhm/photo-gallery/venom/eine-kleine-nachtmusik/A0400-VENOM-Bandphoto.jpg'
   },
   {
     id: 'candlemass',
@@ -706,7 +706,7 @@ export const bands: Band[] = [
       { title: 'Nightfall', year: 1987 },
       { title: 'Ancient Dreams', year: 1988 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i0.wp.com/www.sonicperspectives.com/wp-content/uploads/2022/11/Candlemass-Featured.jpg?fit=1800%2C1200&ssl=1'
   },
   {
     id: 'architects',
@@ -722,7 +722,7 @@ export const bands: Band[] = [
       { title: 'All Our Gods Have Abandoned Us', year: 2016 },
       { title: 'Holy Hell', year: 2018 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.nme.com/wp-content/uploads/2022/01/2022_Architects_EdMason_2000x1270-1392x884.jpg'
   },
   {
     id: 'bring-me-the-horizon',
@@ -738,7 +738,7 @@ export const bands: Band[] = [
       { title: 'That\'s the Spirit', year: 2015 },
       { title: 'POST HUMAN: SURVIVAL HORROR', year: 2020 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://festileaks.com/wp-content/uploads/2016/05/bring-me-the-horizon.jpg'
   },
   {
     id: 'blind-guardian',
@@ -754,7 +754,7 @@ export const bands: Band[] = [
       { title: 'Imaginations from the Other Side', year: 1995 },
       { title: 'Nightfall in Middle-Earth', year: 1998 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.b45d788d58d0bf2f79b3ecaabf7fa4ab?rik=oKnHAvf7zEaHKw&riu=http%3a%2f%2fwww.powerlinemag.com%2fwp-content%2fuploads%2f2012%2f08%2fBlind-Guardian-promo-photo.jpg&ehk=r14Df1VUdY2mQu01IZ3AscGNWlF6ZFoeD%2bPyfrazwpY%3d&risl=1&pid=ImgRaw&r=0'
   },
   {
     id: 'machine-head',
@@ -770,7 +770,7 @@ export const bands: Band[] = [
       { title: 'The Blackening', year: 2007 },
       { title: 'Unto the Locust', year: 2011 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images.kerrangcdn.com/images/Machine-Head-February-2025-promo.jpg?auto=compress&fit=max&w=3840'
   },
   {
     id: 'primus',
@@ -786,7 +786,7 @@ export const bands: Band[] = [
       { title: 'Sailing the Seas of Cheese', year: 1991 },
       { title: 'Pork Soda', year: 1993 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.d544d47af3d16db8ce7ecb9128e28ec8?rik=cTdJbOX6f81ptw&riu=http%3a%2f%2fwww.theredrocksamphitheater.com%2fwp-content%2fuploads%2f2017%2f01%2fPrimusBand-G3-167-1.jpg&ehk=rNThHaHZJsFhSFkM7U3OHsHlCpwKLOMEPRbltisYYJA%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'bathory',
@@ -802,7 +802,7 @@ export const bands: Band[] = [
       { title: 'Under the Sign of the Black Mark', year: 1987 },
       { title: 'Hammerheart', year: 1990 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpapercave.com/wp/wp1983739.jpg'
   },
   {
     id: 'within-temptation',
@@ -819,7 +819,7 @@ export const bands: Band[] = [
       { title: 'The Heart of Everything', year: 2007 },
       { title: 'Resist', year: 2019 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpapercat.com/w/full/e/e/3/1283603-2000x1125-desktop-hd-within-temptation-wallpaper-photo.jpg'
   },
   {
     id: 'stryper',
@@ -835,7 +835,7 @@ export const bands: Band[] = [
       { title: 'To Hell with the Devil', year: 1986 },
       { title: 'In God We Trust', year: 1988 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.billboard.com/wp-content/uploads/2020/09/stryper-2020-press-cr-Pedro-Blanco-billboard-1548-1600287878.jpg'
   },
   {
     id: 'testament',
@@ -851,7 +851,7 @@ export const bands: Band[] = [
       { title: 'The New Order', year: 1988 },
       { title: 'The Gathering', year: 1999 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images7.alphacoders.com/400/thumb-1920-400377.jpg'
   },
   {
     id: 'morbid-angel',
@@ -867,7 +867,7 @@ export const bands: Band[] = [
       { title: 'Blessed Are the Sick', year: 1991 },
       { title: 'Covenant', year: 1993 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.season-of-mist.com/wp-content/uploads/2020/03/Morbid-Angel-Band-01-2011-by-Alex-Solca-scaled.jpg'
   },
   {
     id: 'mastodon',
@@ -884,7 +884,7 @@ export const bands: Band[] = [
       { title: 'Crack the Skye', year: 2009 },
       { title: 'Hushed and Grim', year: 2021 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://ca-times.brightspotcdn.com/dims4/default/9babba7/2147483647/strip/true/crop/2048x1365+0+0/resize/1440x960!/quality/90/?url=https:%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F9f%2F2f%2Fc27921bb55b4416b0db092fd0af3%2Fla-et-mastodon-at-amoeba-pictures-013'
   },
   {
     id: 'saxon',
@@ -900,7 +900,7 @@ export const bands: Band[] = [
       { title: 'Strong Arm of the Law', year: 1980 },
       { title: 'Denim and Leather', year: 1981 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.musiclifemagazine.net/wp-content/uploads/2018/05/band.jpg'
   },
   {
     id: 'kreator',
@@ -917,7 +917,7 @@ export const bands: Band[] = [
       { title: 'Coma of Souls', year: 1990 },
       { title: 'Violent Revolution', year: 2001 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images.squarespace-cdn.com/content/v1/5e284372a502537a6fc07767/9a74197a-d8bc-4ef0-bd2b-a52a2a16431e/Kreator+banner-min.jpg'
   },
   {
     id: 'deicide',
@@ -933,7 +933,7 @@ export const bands: Band[] = [
       { title: 'Legion', year: 1992 },
       { title: 'Once Upon the Cross', year: 1995 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhEohwT5ebKdQJM0fUircV4NVmCm1LOwbMnW7n62Ih1eS04caib4G2ojiXwqJCyNgznGyTFIHAOcGGbGEP_fUhKE4pKYx5xRtl2cNfm_86-hQUuKW3f_72j8Cz9TwuR9dbyiL47NoT8SS5IAUmU3fmO05ULutyovTSLtfa3EqF0x2ZyrNds9HIhAG8vrqf4/s16000/278165309_544371463713954_1965229343102398952_n.jpg'
   },
   {
     id: 'obituary',
@@ -949,7 +949,7 @@ export const bands: Band[] = [
       { title: 'Cause of Death', year: 1990 },
       { title: 'The End Complete', year: 1992 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.summer-breeze.de/wp-content/uploads/2024/08/11/Obituary_web.jpg'
   },
   {
     id: 'burzum',
@@ -965,7 +965,7 @@ export const bands: Band[] = [
       { title: 'Filosofem', year: 1996 },
       { title: 'Hvis lyset tar oss', year: 1994 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://returnofrock.com/wp-content/uploads/2021/07/Kreator-songs-1360x765.jpg'
   },
   {
     id: 'darkthrone',
@@ -981,7 +981,7 @@ export const bands: Band[] = [
       { title: 'Under a Funeral Moon', year: 1993 },
       { title: 'Transilvanian Hunger', year: 1994 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://chaoszine.net/wp-content/uploads/2022/08/darkthrone-2021.jpg'
   },
   {
     id: 'immortal',
@@ -997,7 +997,7 @@ export const bands: Band[] = [
       { title: 'At the Heart of Winter', year: 1999 },
       { title: 'Sons of Northern Darkness', year: 2002 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpapercave.com/wp/wp2838847.jpg'
   },
   {
     id: 'enslaved',
@@ -1014,7 +1014,7 @@ export const bands: Band[] = [
       { title: 'Isa', year: 2004 },
       { title: 'Heimdal', year: 2023 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.2b6c5f0125991d36dd082981aa0f0a72?rik=TU5iApvGV43b9A&riu=http%3a%2f%2fwallpapercave.com%2fwp%2ftBBq5bQ.jpg&ehk=iKKWQFmCKVw17UGZEIRi8ytR%2fgc%2fNhV7NxjkDXGy%2bSo%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'dragonforce',
@@ -1030,7 +1030,7 @@ export const bands: Band[] = [
       { title: 'Inhuman Rampage', year: 2006 },
       { title: 'The Power Within', year: 2012 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i.pinimg.com/originals/d7/12/3e/d7123e67c3d28cd62fc72f5ba83bf92c.jpg'
   },
   {
     id: 'stratovarius',
@@ -1047,7 +1047,7 @@ export const bands: Band[] = [
       { title: 'Destiny', year: 1998 },
       { title: 'Survive', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.51c13ef77fffc3ed041c929e9fd549d7?rik=MGHPlEKakxQKZg&riu=http%3a%2f%2fstratovarius.com%2fwp-content%2fuploads%2f2020%2f12%2fStratovarius26741.jpg&ehk=FUo%2bxwAzliRkwEmNMoc1Z5DUJB0OJ9enuP9BuYi9%2blk%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'queensryche',
@@ -1064,7 +1064,7 @@ export const bands: Band[] = [
       { title: 'Operation: Mindcrime', year: 1988 },
       { title: 'Empire', year: 1990 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i0.wp.com/www.sonicperspectives.com/wp-content/uploads/2023/09/Queensryche-Featured.jpeg?fit=1800%2C1200&ssl=1'
   },
   {
     id: 'fates-warning',
@@ -1080,7 +1080,7 @@ export const bands: Band[] = [
       { title: 'No Exit', year: 1988 },
       { title: 'Parallels', year: 1991 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://fateswarning.com/wp-content/uploads/sites/2/2018/06/band20182.jpg'
   },
   {
     id: 'accept',
@@ -1096,7 +1096,7 @@ export const bands: Band[] = [
       { title: 'Balls to the Wall', year: 1983 },
       { title: 'Metal Heart', year: 1985 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.c79503e9585b4289ec39c1d2fa058e3e?rik=bJtU7hWmGzi5zA&pid=ImgRaw&r=0'
   },
   {
     id: 'exciter',
@@ -1112,7 +1112,7 @@ export const bands: Band[] = [
       { title: 'Violence & Force', year: 1984 },
       { title: 'Long Live the Loud', year: 1985 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i0.wp.com/fullinbloom.com/wp-content/uploads/2022/09/exciterusdates-1-e1663184952469.jpg?fit=1200%2C843&ssl=1'
   },
   {
     id: 'anvil',
@@ -1128,7 +1128,7 @@ export const bands: Band[] = [
       { title: 'Metal on Metal', year: 1982 },
       { title: 'Forged in Fire', year: 1983 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.806a98839529de10d0a3d8cca81dfc66?rik=UC0bK2Ma9KuoFw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-uMSQZE8HEss%2fVtyeOnu1mCI%2fAAAAAAAAFos%2fl5Qzj1epd6I%2fs1600%2fAnvilBand6386.jpg&ehk=OPuSGgRT8rCgQe%2bRCyr6NreUebsceokgRivVXMJQBgw%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'saint-vitus',
@@ -1144,7 +1144,7 @@ export const bands: Band[] = [
       { title: 'Hallow\'s Victim', year: 1985 },
       { title: 'Born Too Late', year: 1986 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.season-of-mist.com/wp-content/uploads/2020/03/SaintVitusEsterSegarra_0603-1536x1022.jpg'
   },
   {
     id: 'sleep',
@@ -1160,7 +1160,7 @@ export const bands: Band[] = [
       { title: 'Jerusalem', year: 1999 },
       { title: 'The Sciences', year: 2018 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i.pinimg.com/originals/2f/71/0d/2f710d0893dc20920725dec1d6446836.jpg'
   },
   {
     id: 'trouble',
@@ -1176,7 +1176,7 @@ export const bands: Band[] = [
       { title: 'The Skull', year: 1985 },
       { title: 'Trouble', year: 1990 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://thrashmetaliq.com/wp-content/uploads/2019/03/screen-shot-2019-03-26-at-11.18.23-pm.png'
   },
   {
     id: 'cathedral',
@@ -1192,7 +1192,7 @@ export const bands: Band[] = [
       { title: 'The Ethereal Mirror', year: 1993 },
       { title: 'The Carnival Bizarre', year: 1995 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.2b797d707d2c07754ddb222e64f4a83c?rik=Dy%2fnWBoSNXKCUQ&riu=http%3a%2f%2fwww.queensofsteel.com%2fwp-content%2fuploads%2f2016%2f08%2fhellbringer.jpg&ehk=2c6YXkmcjvjKyP%2fVv%2fhcjiPhiB%2bJ8OJfWLbqHNzMLbA%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'pentagram',
@@ -1208,7 +1208,7 @@ export const bands: Band[] = [
       { title: 'Day of Reckoning', year: 1987 },
       { title: 'Be Forewarned', year: 1994 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://getwallpapers.com/wallpaper/full/9/f/2/798219-widescreen-pentagram-wallpaper-1920x1080.jpg'
   },
   {
     id: 'poison',
@@ -1224,7 +1224,7 @@ export const bands: Band[] = [
       { title: 'Open Up and Say... Ahh!', year: 1988 },
       { title: 'Flesh & Blood', year: 1990 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://3.bp.blogspot.com/_hX1Uagd3X7I/THHuTJWDqfI/AAAAAAAAAyM/hC9YzmeXjGM/s1600/Poison7.jpg'
   },
   {
     id: 'ratt',
@@ -1240,7 +1240,7 @@ export const bands: Band[] = [
       { title: 'Invasion of Your Privacy', year: 1985 },
       { title: 'Dancing Undercover', year: 1986 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i0.wp.com/metalwani.com/wp-content/uploads/2022/06/RATT.jpg?fit=1280%2C781&ssl=1'
   },
   {
     id: 'twisted-sister',
@@ -1256,7 +1256,7 @@ export const bands: Band[] = [
       { title: 'You Can\'t Stop Rock \'n\' Roll', year: 1983 },
       { title: 'Stay Hungry', year: 1984 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.billboard.com/wp-content/uploads/media/twisted-sister-1984-portrait-billboard-1548.jpg?w=942&h=628&crop=1'
   },
   {
     id: 'def-leppard',
@@ -1272,7 +1272,7 @@ export const bands: Band[] = [
       { title: 'Hysteria', year: 1987 },
       { title: 'Adrenalize', year: 1992 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://vignette.wikia.nocookie.net/defleppard/images/8/83/Def_Leppard_2011_Group_Shot_1_by_Ash_Newell.jpeg/revision/latest/scale-to-width-down/2000?cb=20131230213553'
   },
   {
     id: 'soundgarden',
@@ -1288,7 +1288,7 @@ export const bands: Band[] = [
       { title: 'Superunknown', year: 1994 },
       { title: 'Down on the Upside', year: 1996 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i.pinimg.com/originals/d7/b1/65/d7b165f158da386b822c7fa09e4a38a0.jpg'
   },
   {
     id: 'exhorder',
@@ -1304,7 +1304,7 @@ export const bands: Band[] = [
       { title: 'The Law', year: 1992 },
       { title: 'Mourn the Southern Skies', year: 2019 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.headbangersnews.com.br/wp-content/uploads/2024/01/Exhorder2023q-1024x775.jpg'
   },
   {
     id: 'paradise-lost',
@@ -1320,7 +1320,7 @@ export const bands: Band[] = [
       { title: 'Icon', year: 1993 },
       { title: 'Draconian Times', year: 1995 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpaperaccess.com/full/6421672.jpg'
   },
   {
     id: 'my-dying-bride',
@@ -1336,7 +1336,7 @@ export const bands: Band[] = [
       { title: 'Turn Loose the Swans', year: 1993 },
       { title: 'The Angel and the Dark River', year: 1995 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://peaceville.com/mydyingbride/promo/images/IMG_4340.jpg'
   },
   {
     id: 'tiamat',
@@ -1352,7 +1352,7 @@ export const bands: Band[] = [
       { title: 'Wildhoney', year: 1994 },
       { title: 'A Deeper Kind of Slumber', year: 1997 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tiamat_Rockharz_Open_Air_2014_20.JPG/960px-Tiamat_Rockharz_Open_Air_2014_20.JPG'
   },
   {
     id: 'theatre-of-tragedy',
@@ -1368,7 +1368,7 @@ export const bands: Band[] = [
       { title: 'Velvet Darkness They Fear', year: 1996 },
       { title: 'Aégis', year: 1998 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.metal-archives.com/images/1/6/4/164_photo.jpg'
   },
   {
     id: 'living-colour',
@@ -1384,7 +1384,7 @@ export const bands: Band[] = [
       { title: 'Time\'s Up', year: 1990 },
       { title: 'Stain', year: 1993 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.hindustantimes.com/ht-img/img/2025/04/20/1600x900/living_colour_1745119120906_1745119131605.jpg'
   },
   {
     id: 'infectious-grooves',
@@ -1400,7 +1400,7 @@ export const bands: Band[] = [
       { title: 'Sarsippius\' Ark', year: 1993 },
       { title: 'Groove Family Cyco', year: 1994 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://spotlightreport.net/wp-content/uploads/2024/04/InfectiousGrooves_13-2048x1365.jpg'
   },
   {
     id: 'body-count',
@@ -1417,7 +1417,7 @@ export const bands: Band[] = [
       { title: 'Bloodlust', year: 2017 },
       { title: 'Carnivore', year: 2020 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://bodycountband.com/wp-content/uploads/2024/04/bclarge-1920x1281.jpg'
   },
   {
     id: 'stuck-mojo',
@@ -1433,7 +1433,7 @@ export const bands: Band[] = [
       { title: 'Pigwalk', year: 1996 },
       { title: 'Rising', year: 1998 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.overdrive.ie/wp-content/uploads/2016/09/Stuck-Mojo-2.jpg'
   },
   {
     id: 'limp-bizkit',
@@ -1449,7 +1449,7 @@ export const bands: Band[] = [
       { title: 'Significant Other', year: 1999 },
       { title: 'Chocolate Starfish and the Hot Dog Flavored Water', year: 2000 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpapers.com/images/hd/limp-bizkit-band-portrait-xqiym3mxs1ry72r5.jpg'
   },
   {
     id: 'oomph',
@@ -1465,7 +1465,7 @@ export const bands: Band[] = [
       { title: 'Sperm', year: 1994 },
       { title: 'Wahrheit oder Pflicht', year: 2004 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://d6scj24zvfbbo.cloudfront.net/f8abed858b46da7ba82094e89f65b03c/200000093-e342de4395/band1-9.jpg?ph=8101259f05'
   },
   {
     id: 'eisbrecher',
@@ -1481,7 +1481,7 @@ export const bands: Band[] = [
       { title: 'Die Hölle muss warten', year: 2012 },
       { title: 'Schock', year: 2015 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/C1+KzmlRecS._SL1000_.png'
   },
   {
     id: 'megaherz',
@@ -1497,12 +1497,12 @@ export const bands: Band[] = [
       { title: 'Kopfschuss', year: 1998 },
       { title: 'Himmelfahrt', year: 2000 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.8ca7ff61c606f0ede7037c2d1a5fb831?rik=vsBQ8paWn56ueQ&pid=ImgRaw&r=0'
   },
   {
     id: 'die-krupps',
     name: 'Die Krupps',
-    genre: 'Industrial Metal / EBM',
+    genre: 'Neue Deutsche Härte',
     formed: '1980',
     origin: 'Düsseldorf, West Germany',
     description: 'Industrial pioneers who moved from early electronic body music into a heavy, guitar-driven metal sound, influencing the entire industrial metal subgenre.',
@@ -1513,7 +1513,7 @@ export const bands: Band[] = [
       { title: 'I', year: 1992 },
       { title: 'II - The Final Option', year: 1993 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.side-line.com/wp-content/uploads/2015/06/die-krupps-v-for-metal-machine.jpg'
   },
   {
     id: 'arcturus',
@@ -1529,7 +1529,7 @@ export const bands: Band[] = [
       { title: 'La Masquerade Infernale', year: 1997 },
       { title: 'The Sham Mirrors', year: 2002 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.season-of-mist.com/wp-content/uploads/2020/03/Arcturus-scaled-e1589277709793.jpg'
   },
   {
     id: 'mr-bungle',
@@ -1546,7 +1546,7 @@ export const bands: Band[] = [
       { title: 'California', year: 1999 },
       { title: 'The Raging Wrath of the Easter Bunny Demo', year: 2020 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images.kerrangcdn.com/images/Mr-Bungle-August-2020-promo.jpg?auto=compress&fit=max&w=1920'
   },
   {
     id: 'borgir',
@@ -1562,7 +1562,7 @@ export const bands: Band[] = [
       { title: 'Spiritual Black Dimensions', year: 1999 },
       { title: 'Death Cult Armageddon', year: 2003 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images.squarespace-cdn.com/content/v1/5a8f12b47131a5398d8eaaf6/1520310177231-HGP5XUVBT1UI31Y4LXX3/dimmu_band.jpg'
   },
   {
     id: 'unexpect',
@@ -1577,7 +1577,7 @@ export const bands: Band[] = [
       { title: 'In a Flesh Aquarium', year: 2006 },
       { title: 'Fables of the Sleepless Night', year: 2011 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://cs7.pikabu.ru/post_img/big/2018/11/16/5/1542353579122369112.png'
   },
   {
     id: 'solefald',
@@ -1593,7 +1593,7 @@ export const bands: Band[] = [
       { title: 'Neonism', year: 1999 },
       { title: 'In Harmonia Universali', year: 2003 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://assets.season-of-mist.com/wp-content/uploads/2020/03/Solefald.jpg'
   },
   {
     id: 'the-devil-wears-prada',
@@ -1609,7 +1609,7 @@ export const bands: Band[] = [
       { title: 'Dead Throne', year: 2011 },
       { title: 'Color Decay', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.7a992c6e807eb5f7bae0a6f7be5921b6?rik=nOus3Nd9wmNDgw&pid=ImgRaw&r=0'
   },
   {
     id: 'skillet',
@@ -1626,7 +1626,7 @@ export const bands: Band[] = [
       { title: 'Unleashed', year: 2016 },
       { title: 'Dominion', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://americansongwriter.com/wp-content/uploads/2020/09/Skillet.jpg?fit=2000%2C1333'
   },
   {
     id: 'august-burns-red',
@@ -1643,7 +1643,7 @@ export const bands: Band[] = [
       { title: 'Rescue & Restore', year: 2013 },
       { title: 'Death Below', year: 2023 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://townsquare.media/site/366/files/2021/03/August-Burns-Red-2021.jpg'
   },
   {
     id: 'mortification',
@@ -1659,7 +1659,7 @@ export const bands: Band[] = [
       { title: 'Scrolls of the Megilloth', year: 1992 },
       { title: 'Post Momentary Affliction', year: 1993 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.30839df52509f1bfb7f094c4a3bfb477?rik=tR73uW9k3C6iuA&pid=ImgRaw&r=0'
   },
   {
     id: 'amebix',
@@ -1675,7 +1675,7 @@ export const bands: Band[] = [
       { title: 'Monolith', year: 1987 },
       { title: 'Sonic Mass', year: 2011 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.metalorgie.com/media/cache/band_hero/images/band/picture/Amebix.jpg'
   },
   {
     id: 'antisect',
@@ -1690,7 +1690,7 @@ export const bands: Band[] = [
       { title: 'In Darkness, There is No Choice', year: 1983 },
       { title: 'The Rising of the Lights', year: 2017 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.5ed58e72a023a592199a9dbf449f62c7?rik=eiKLQHYswD4ADQ&pid=ImgRaw&r=0'
   },
   {
     id: 'extreme-noise-terror',
@@ -1706,23 +1706,7 @@ export const bands: Band[] = [
       { title: 'Phonophobia', year: 1992 },
       { title: 'Retro-bution', year: 1995 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 'discharge',
-    name: 'Discharge',
-    genre: 'D-beat / Hardcore Punk',
-    formed: '1977',
-    origin: 'Stoke-on-Trent, England',
-    description: 'The inventors of "D-beat". Discharge\'s minimalist, high-speed approach and lyrical focus on war and nuclear apocalypse had a profound effect on the development of thrash and extreme metal.',
-    members: ['Jeff "Rainy" Conway', 'Tezz Roberts', 'Bones', 'Proper', 'JJ Janiak'],
-    mostKnownSongs: ['Protest and Survive', 'The Nightmare Continues', 'Ain\'t No Feeble Bastard'],
-    albums: [
-      { title: 'Hear Nothing See Nothing Say Nothing', year: 1982 },
-      { title: 'Never Again', year: 1981 },
-      { title: 'End of Days', year: 2016 }
-    ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.metalorgie.com/media/cache/band_hero/images/band/picture/Extreme-Noise-Terror.jpg'
   },
   {
     id: 'dystopia',
@@ -1738,7 +1722,7 @@ export const bands: Band[] = [
       { title: 'The Aftermath', year: 1999 },
       { title: 'Dystopia', year: 2008 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://f4.bcbits.com/img/0025952051_10.jpg'
   },
   {
     id: 'orange-goblin',
@@ -1754,7 +1738,7 @@ export const bands: Band[] = [
       { title: 'Time Travelling Blues', year: 1998 },
       { title: 'The Big Black', year: 2000 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://peaceville.com/wp-content/uploads/2021/10/Orange-Goblin-2021-TinaK-0397-Edit.jpg'
   },
   {
     id: 'girlschool',
@@ -1770,7 +1754,7 @@ export const bands: Band[] = [
       { title: 'Hit and Run', year: 1981 },
       { title: 'Screaming Blue Murder', year: 1982 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.65ddd4925c7512dfd664366c8c2017f8?rik=Lb%2bFkbqXA0xYnw&pid=ImgRaw&r=0'
   },
   {
     id: 'black-label-society',
@@ -1787,7 +1771,7 @@ export const bands: Band[] = [
       { title: 'Mafia', year: 2005 },
       { title: 'Doom Crew Inc. ', year: 2021 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://images8.alphacoders.com/845/845766.jpg'
   },
   {
     id: 'possessed',
@@ -1803,7 +1787,7 @@ export const bands: Band[] = [
       { title: 'Beyond the Gates', year: 1986 },
       { title: 'Revelations of Oblivion', year: 2019 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.spirit-of-metal.com/les%20goupes/P/Possessed/pics/a57e_1.jpg'
   },
   {
     id: 'hellhammer',
@@ -1817,7 +1801,7 @@ export const bands: Band[] = [
     albums: [
       { title: 'Apocalyptic Raids (EP)', year: 1984 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'hhttps://cdn.mos.cms.futurecdn.net/Z6PgSvJyyTLLET7DH3d7F4.jpg'
   },
   {
     id: 'celtic-frost',
@@ -1833,7 +1817,7 @@ export const bands: Band[] = [
       { title: 'Into the Pandemonium', year: 1987 },
       { title: 'Monotheist', year: 2006 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://cms.kerrang.com/images/_1200x630_crop_center-center_82_none/Celtic-Frost-band.jpg?mtime=1560956196'
   },
   {
     id: 'eluveitie',
@@ -1849,7 +1833,7 @@ export const bands: Band[] = [
       { title: 'Helvetios', year: 2012 },
       { title: 'Ategnatos', year: 2019 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpapercave.com/wp/oW4iDwI.jpg'
   },
   {
     id: 'korpiklaani',
@@ -1865,7 +1849,7 @@ export const bands: Band[] = [
       { title: 'Tales Along This Road', year: 2006 },
       { title: 'Jylhä', year: 2021 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.8c7ddf2a9490a3764111c3cbf361d27a?rik=94oEyPZYBdBMNw&pid=ImgRaw&r=0'
   },
   {
     id: 'ensiferum',
@@ -1881,23 +1865,7 @@ export const bands: Band[] = [
       { title: 'Iron', year: 2004 },
       { title: 'Victory Songs', year: 2007 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 'in-extremo',
-    name: 'In Extremo',
-    genre: 'Medieval Metal',
-    formed: '1995',
-    origin: 'Berlin, Germany',
-    description: 'A pioneer of the medieval metal scene. In Extremo fuses heavy metal with traditional instruments like bagpipes and shawms, often performing in medieval-style costume.',
-    members: ['Das Letzte Einhorn', 'Dr. Pymonte', 'Flex der Biegsame'],
-    mostKnownSongs: ['Liam', 'Küss Mich', 'Vollmond', 'Sängerkrieg'],
-    albums: [
-      { title: 'Verehrt und Angespien', year: 1999 },
-      { title: 'Sängerkrieg', year: 2008 },
-      { title: 'Quid Pro Quo', year: 2016 }
-    ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://f4.bcbits.com/img/0019902422_10.jpg'
   },
   {
     id: 'amorphis',
@@ -1914,7 +1882,7 @@ export const bands: Band[] = [
       { title: 'Queen of Time', year: 2018 },
       { title: 'Halo', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.51723e142fc412ac521415300ef70dde?rik=YmWr%2btDZ%2fdHNOg&pid=ImgRaw&r=0'
   },
   {
     id: 'carcass',
@@ -1930,23 +1898,7 @@ export const bands: Band[] = [
       { title: 'Heartwork', year: 1993 },
       { title: 'Surgical Steel', year: 2013 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 'pig-destroyer',
-    name: 'Pig Destroyer',
-    genre: 'Grindcore',
-    formed: '1997',
-    origin: 'Alexandria, Virginia, USA',
-    description: 'Technical, visceral, and uncompromising. Pig Destroyer redefined grindcore with JR Hayes\' poetic, terrifying lyrics and Scott Hull\'s precision riffing.',
-    members: ['JR Hayes', 'Scott Hull', 'Blake Harrison (Late)', 'Adam Jarvis'],
-    mostKnownSongs: ['Prowler in the Yard', 'Gravedancer', 'The Tower on Fire'],
-    albums: [
-      { title: 'Prowler in the Yard', year: 2001 },
-      { title: 'Terrifyer', year: 2004 },
-      { title: 'Phantom Limb', year: 2007 }
-    ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://cdn.mos.cms.futurecdn.net/jtXm6Qo8jLYF3L6woWaNyn-1280-80.jpg'
   },
   {
     id: 'repulsion',
@@ -1960,23 +1912,7 @@ export const bands: Band[] = [
     albums: [
       { title: 'Horrified', year: 1989 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
-  },
-  {
-    id: 'nasum',
-    name: 'Nasum',
-    genre: 'Grindcore',
-    formed: '1992',
-    origin: 'Örebro, Sweden',
-    description: 'A key band in the revival of grindcore in the late 90s. Nasum combined extreme speed with a clean, powerful production and strong political themes.',
-    members: ['Mieszko Talarczyk (Late)', 'Anders Jakobson'],
-    mostKnownSongs: ['Scoop', 'Inhale/Exhale', 'Wrath'],
-    albums: [
-      { title: 'Inhale/Exhale', year: 1998 },
-      { title: 'Human 2.0', year: 2000 },
-      { title: 'Helvete', year: 2003 }
-    ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://cdn.shopify.com/s/files/1/1545/2923/articles/repulsion-band-live-180108_1dc94755-7d25-4155-8d3f-e2c131917c4d_1024x.jpg?v=1567712056'
   },
   {
     id: 'ladybaby',
@@ -1990,12 +1926,12 @@ export const bands: Band[] = [
     albums: [
       { title: 'One Year Anniversary Album', year: 2016 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://kprofiles.com/wp-content/uploads/2020/02/ladybaby-march-2024-900x600.jpg'
   },
   {
     id: 'passcode',
     name: 'PassCode',
-    genre: 'Kawaii Metal / Electronicore',
+    genre: 'Kawaii Metal',
     formed: '2013',
     origin: 'Osaka, Japan',
     description: 'Fusing idol pop with aggressive metalcore and heavy electronics. PassCode is known for their high-intensity live shows and Nao Minami\'s brutal screams.',
@@ -2006,7 +1942,7 @@ export const bands: Band[] = [
       { title: 'Clarity', year: 2019 },
       { title: 'Stride 4 Love', year: 2021 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://overseas.passcode-official.com/package/wp-content/themes/passcode_overseas/images/common/og.jpg'
   },
   {
     id: 'hanabie',
@@ -2021,7 +1957,7 @@ export const bands: Band[] = [
       { title: 'Girls Reform Manifest', year: 2021 },
       { title: 'Reborn Superstar!', year: 2023 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://morecore.media/media/hanabie-01-2025-official-press.jpg'
   },
   {
     id: 'puya',
@@ -2036,7 +1972,7 @@ export const bands: Band[] = [
       { title: 'Fundamental', year: 1999 },
       { title: 'Union', year: 2001 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.29b30497ab99fe394ba9916da08b17b6?rik=8DdPZOlR9Qgr9w&pid=ImgRaw&r=0'
   },
   {
     id: 'ill-nino',
@@ -2052,7 +1988,7 @@ export const bands: Band[] = [
       { title: 'Confession', year: 2003 },
       { title: 'One Nation Underground', year: 2005 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://metalitalia.com/wp-content/uploads/2024/07/ILL-NINO-band-2024-1536x995.jpg'
   },
   {
     id: 'soulfly',
@@ -2069,7 +2005,7 @@ export const bands: Band[] = [
       { title: 'Prophecy', year: 2004 },
       { title: 'Totem', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://th.bing.com/th/id/R.c6c6578353c91d071dddc57604f7ccab?rik=k4p53sY383WxSg&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f4%2fa%2f4%2f728978-soulfly-wallpapers-1920x1080-samsung-galaxy.jpg&ehk=RE6sWsxb5ejbhfhiedGeEDktBx%2b6yMLGFdYo8dAUods%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'animal',
@@ -2085,7 +2021,7 @@ export const bands: Band[] = [
       { title: 'Poder Latino', year: 1998 },
       { title: 'Animal 6', year: 2001 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.radioacktiva.com/wp-content/uploads/2023/02/09022023-animal.jpg'
   },
   {
     id: 'as-i-lay-dying',
@@ -2102,7 +2038,7 @@ export const bands: Band[] = [
       { title: 'An Ocean Between Us', year: 2007 },
       { title: 'Shaped by Fire', year: 2019 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://thegallery.gr/wp-content/uploads/2024/09/As-I-Lay-Dying-band-2024.jpg'
   },
   {
     id: 'symphony-x',
@@ -2119,7 +2055,7 @@ export const bands: Band[] = [
       { title: 'Paradise Lost', year: 2007 },
       { title: 'Underworld', year: 2015 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://townsquare.media/site/366/files/2021/07/attachment-symphony_x_2015.jpg'
   },
   {
     id: 'jason-becker',
@@ -2134,7 +2070,7 @@ export const bands: Band[] = [
       { title: 'Perpetual Burn', year: 1988 },
       { title: 'Perspective', year: 1996 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1540325492211-1367098e9a2b?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://guitar.com/wp-content/uploads/2021/06/Jason-Becker-MediaPunch-Alamy@1400x1050.jpg'
   },
   {
     id: 'cacophony',
@@ -2149,7 +2085,7 @@ export const bands: Band[] = [
       { title: 'Speed Metal Symphony', year: 1987 },
       { title: 'Go Off!', year: 1988 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://fastly-s3.allmusic.com/release/mr0000831269/front/400/rVBBE4c_koPwsjHgTcxiFz6KsMttLlyBmmVTZ6_CLs0=.jpg'
   },
   {
     id: 'neurosis',
@@ -2165,7 +2101,7 @@ export const bands: Band[] = [
       { title: 'Times of Grace', year: 1999 },
       { title: 'A Sun That Never Sets', year: 2001 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://i.ytimg.com/vi/6JuOux2dakU/maxresdefault.jpg'
   },
   {
     id: 'isis',
@@ -2181,7 +2117,7 @@ export const bands: Band[] = [
       { title: 'Panopticon', year: 2004 },
       { title: 'In the Absence of Truth', year: 2006 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://cdn.mos.cms.futurecdn.net/UFxVH3piiTQttqfqu5KsV3.jpg'
   },
   {
     id: 'cult-of-luna',
@@ -2198,12 +2134,12 @@ export const bands: Band[] = [
       { title: 'A Dawn to Fear', year: 2019 },
       { title: 'The Long Road North', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhI3sdHI6rGe3rlskxYF1jUJ7CgjFG8yBtPAq2Innd35A_qfPyYxtS80Ak2CeEkhs4s6VQR7NNIueHOTe-08-7lLs9eObB8yx5AFRTjJKfNgvXtRfbaCdIP3khuWC-OHatv4I3V3yfS9B8/s1600/9_MC_Band.jpg'
   },
   {
     id: 'russian-circles',
     name: 'Russian Circles',
-    genre: 'Post-Metal / Instrumental Rock',
+    genre: 'Post-Metal',
     formed: '2004',
     origin: 'Chicago, Illinois, USA',
     description: 'An instrumental trio that creates massive, cinematic soundscapes fuzing heavy metal intensity with post-rock dynamics and looping techniques.',
@@ -2215,7 +2151,7 @@ export const bands: Band[] = [
       { title: 'Geneva', year: 2009 },
       { title: 'Gnosis', year: 2022 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://eternaldecay.de/wp-content/uploads/2022/07/russian-circles-logo-678x381.jpg'
   },
   {
     id: 'pelican',
@@ -2231,7 +2167,7 @@ export const bands: Band[] = [
       { title: 'The Fire in Our Throats Will Beckon the Thaw', year: 2005 },
       { title: 'City of Echoes', year: 2007 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1526478806334-5fa488f3f6ff?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://www.therockpit.net/wp-content/uploads/2019/01/pelican-1024x683.jpg'
   },
   {
     id: 'epica',
@@ -2248,7 +2184,7 @@ export const bands: Band[] = [
       { title: 'The Holographic Principle', year: 2016 },
       { title: 'Omega', year: 2021 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1514525253344-9914dee966ac?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://ramzine.co.uk/wp-content/uploads/2021/03/Epica.jpeg'
   },
   {
     id: 'therion',
@@ -2265,7 +2201,7 @@ export const bands: Band[] = [
       { title: 'Secret of the Runes', year: 2001 },
       { title: 'Leviathan', year: 2021 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://wallpapercave.com/wp/wp6937111.jpg'
   },
   {
     id: 'haggard',
@@ -2281,6 +2217,6 @@ export const bands: Band[] = [
       { title: 'Awaking the Centuries', year: 2000 },
       { title: 'Eppur Si Muove', year: 2004 }
     ],
-    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800'
+    imageUrl: 'https://1.bp.blogspot.com/-h-1c7O8bf20/UcM6OQm_C2I/AAAAAAAAADI/hSHcde4A0YI/s1600/Haggard3.jpg'
   }
 ];
