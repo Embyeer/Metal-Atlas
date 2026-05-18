@@ -5,7 +5,7 @@ import GenreDetails from './components/GenreDetails';
 import MetalGraph from './components/MetalGraph';
 import { BandsList } from './components/BandsList';
 import { BandModal } from './components/BandModal';
-import { Band } from './data/bands';
+import { bands as BANDS, Band } from './data/bands';
 import { Github, X } from 'lucide-react';
 
 type Tab = 'map' | 'bands';
@@ -14,6 +14,8 @@ export default function App() {
   const [selectedGenreId, setSelectedGenreId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<Tab>('map');
   const [selectedBand, setSelectedBand] = useState<Band | null>(null);
+  const [navigationSource, setNavigationSource] = useState<Tab | null>(null);
+  const [direction, setDirection] = useState(0);
 
   const selectedGenre = GENRES.find(g => g.id === selectedGenreId);
 
@@ -22,15 +24,47 @@ export default function App() {
     const handleEsc = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
         setSelectedGenreId(null);
-        setSelectedBand(null);
+        handleCloseBand();
       }
     };
     window.addEventListener('keydown', handleEsc);
     return () => window.removeEventListener('keydown', handleEsc);
-  }, []);
+  }, [navigationSource]); // Add navigationSource to dependency array
 
   const handleSelectGenre = (id: string) => {
     setSelectedGenreId(prev => prev === id ? null : id);
+  };
+
+  const handleNavigateToBand = (band: Band) => {
+    setNavigationSource(activeTab);
+    setSelectedGenreId(null);
+    setActiveTab('bands');
+    setSelectedBand(band);
+  };
+
+  const handleCloseBand = () => {
+    setSelectedBand(null);
+    setDirection(0);
+    if (navigationSource === 'map') {
+      setActiveTab('map');
+    }
+    setNavigationSource(null);
+  };
+
+  const handleNextBand = () => {
+    if (!selectedBand) return;
+    setDirection(1);
+    const currentIndex = BANDS.findIndex(b => b.id === selectedBand.id);
+    const nextIndex = (currentIndex + 1) % BANDS.length;
+    setSelectedBand(BANDS[nextIndex]);
+  };
+
+  const handlePreviousBand = () => {
+    if (!selectedBand) return;
+    setDirection(-1);
+    const currentIndex = BANDS.findIndex(b => b.id === selectedBand.id);
+    const prevIndex = (currentIndex - 1 + BANDS.length) % BANDS.length;
+    setSelectedBand(BANDS[prevIndex]);
   };
 
   return (
@@ -144,6 +178,7 @@ export default function App() {
                   <GenreDetails 
                     genre={selectedGenre} 
                     onSelectGenre={setSelectedGenreId} 
+                    onSelectBand={handleNavigateToBand}
                   />
                 </div>
               </motion.div>
@@ -156,7 +191,10 @@ export default function App() {
           {selectedBand && (
             <BandModal 
               band={selectedBand} 
-              onClose={() => setSelectedBand(null)} 
+              onClose={handleCloseBand} 
+              onNext={handleNextBand}
+              onPrevious={handlePreviousBand}
+              direction={direction}
             />
           )}
         </AnimatePresence>

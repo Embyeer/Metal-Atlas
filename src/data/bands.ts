@@ -30,7 +30,7 @@ export const bands: Band[] = [
       { title: 'Ride the Lightning', year: 1984 },
       { title: 'Master of Puppets', year: 1986 },
       { title: '...And Justice for All', year: 1988 },
-      { title: 'Metallica (The Black Album)', year: 1991 },
+      { title: 'Metallica', year: 1991 },
       { title: '72 Seasons', year: 2023 }
     ],
     imageUrl: 'https://www.rollingstone.com/wp-content/uploads/2023/03/metallica-72-seasons.jpg?w=1581&h=1054&crop=1'
@@ -118,7 +118,10 @@ export const bands: Band[] = [
       { title: 'Peace Sells... but Who\'s Buying?', year: 1986 },
       { title: 'Rust in Peace', year: 1990 },
       { title: 'Countdown to Extinction', year: 1992 },
-      { title: 'The Sick, the Dying... and the Dead!', year: 2022 }
+      { title: 'Youthanasia', year: 1994 },
+      { title: 'The Sick, the Dying... and the Dead!', year: 2022 },
+      { title: 'Megadeth', year: 2026 }
+
     ],
     imageUrl: 'https://images3.alphacoders.com/179/thumb-1920-179847.jpg'
   },
@@ -1587,9 +1590,9 @@ export const bands: Band[] = [
     origin: 'Oslo, Norway',
     description: 'Known for their sophisticated and often intellectual approach to metal, Solefald incorporates elements of post-modernism, philosophy, and diverse musical styles.',
     members: ['Cornelius Jakhelln', 'Lazare'],
-    mostKnownSongs: ['The Linear Nightmare', 'Nutrisco et Extinguo', 'Red For Fire'],
+    mostKnownSongs: ['The Linear Scaffold', 'Nutrisco et Extinguo', 'Red For Fire'],
     albums: [
-      { title: 'The Linear Nightmare', year: 1999 },
+      { title: 'The Linear Scaffold', year: 1999 },
       { title: 'Neonism', year: 1999 },
       { title: 'In Harmonia Universali', year: 2003 }
     ],
@@ -1801,7 +1804,7 @@ export const bands: Band[] = [
     albums: [
       { title: 'Apocalyptic Raids (EP)', year: 1984 }
     ],
-    imageUrl: 'hhttps://cdn.mos.cms.futurecdn.net/Z6PgSvJyyTLLET7DH3d7F4.jpg'
+    imageUrl: 'https://cdn.mos.cms.futurecdn.net/Z6PgSvJyyTLLET7DH3d7F4.jpg'
   },
   {
     id: 'celtic-frost',
@@ -1898,7 +1901,7 @@ export const bands: Band[] = [
       { title: 'Heartwork', year: 1993 },
       { title: 'Surgical Steel', year: 2013 }
     ],
-    imageUrl: 'https://cdn.mos.cms.futurecdn.net/jtXm6Qo8jLYF3L6woWaNyn-1280-80.jpg'
+    imageUrl: 'https://th.bing.com/th/id/R.79d10f636261d1220340baba7c4f5a3e?rik=S8xr0UUG9CExNA&riu=http%3a%2f%2fbands.obsceneextreme.cz%2fcontent%2fimages%2fcarcass.jpeg&ehk=%2bOD2vJX0ns7hslCCMxiycF0NqGskxh3BEFiv%2fWJKenI%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'repulsion',
@@ -1912,7 +1915,40 @@ export const bands: Band[] = [
     albums: [
       { title: 'Horrified', year: 1989 }
     ],
-    imageUrl: 'https://cdn.shopify.com/s/files/1/1545/2923/articles/repulsion-band-live-180108_1dc94755-7d25-4155-8d3f-e2c131917c4d_1024x.jpg?v=1567712056'
+    imageUrl: 'https://alchetron.com/cdn/repulsion-band-9376a5c4-eee6-4268-9e61-ae63b612090-resize-750.jpg'
+  },
+  {
+    id: 'pig-destroyer',
+    name: 'Pig Destroyer',
+    genre: 'Grindcore',
+    formed: '1997',
+    origin: 'Alexandria, Virginia, USA',
+    description: 'One of the most innovative and respected modern grindcore bands. Pig Destroyer is known for their complex, dense songwriting, J.R. Hayes\'s poetic lyrics, and the absence of a bass guitar in their core lineup.',
+    members: ['J.R. Hayes', 'Scott Hull', 'Blake Harrison', 'Adam Jarvis'],
+    mostKnownSongs: ['Prowler in the Yard', 'Sheet Walker', 'The Diplomat', 'Girl in the Slayer Jacket'],
+    albums: [
+      { title: 'Prowler in the Yard', year: 2001 },
+      { title: 'Terrifyer', year: 2004 },
+      { title: 'Phantom Limb', year: 2007 }
+    ],
+    imageUrl: 'https://media.npr.org/assets/img/2012/10/11/joshsisk8_wide-3ed4f7126b165ba787c1b0d2798fb1ccd3ef7931-s1400-c100.jpg'
+  },
+  {
+    id: 'nasum',
+    name: 'Nasum',
+    genre: 'Grindcore',
+    formed: '1992',
+    origin: 'Örebro, Sweden',
+    description: 'A legendary Swedish grindcore band that brought a high level of production and tight musicianship to the genre. Their career was tragically cut short by the death of founder Mieszko Talarczyk in the 2004 Indian Ocean tsunami.',
+    members: ['Mieszko Talarczyk', 'Anders Jakobson', 'Jon Lindqvist', 'Urban Skytt'],
+    mostKnownSongs: ['Inhale/Exhale', 'Scoop', 'Shadows', 'Wrath'],
+    albums: [
+      { title: 'Inhale/Exhale', year: 1998 },
+      { title: 'Human 2.0', year: 2000 },
+      { title: 'Helvete', year: 2003 },
+      { title: 'Shift', year: 2004 }
+    ],
+    imageUrl: 'https://www.nasum.com/press/nasum_7829.jpg'
   },
   {
     id: 'ladybaby',
@@ -1926,7 +1962,7 @@ export const bands: Band[] = [
     albums: [
       { title: 'One Year Anniversary Album', year: 2016 }
     ],
-    imageUrl: 'https://kprofiles.com/wp-content/uploads/2020/02/ladybaby-march-2024-900x600.jpg'
+    imageUrl: 'https://th.bing.com/th/id/R.4640d091fd95be2a97591ce71a11147e?rik=VxP8TnDxVh%2fSeg&riu=http%3a%2f%2fwww.japanexpomalaysia.com%2fwp-content%2fuploads%2f2018%2f06%2fladybaby-1024x1024.jpg&ehk=aNomKrBM9Im%2fQZP9dfTakAvwAEWovzdFeM%2bDFn9ivz4%3d&risl=&pid=ImgRaw&r=0'
   },
   {
     id: 'passcode',
@@ -2199,7 +2235,7 @@ export const bands: Band[] = [
       { title: 'Theli', year: 1996 },
       { title: 'Vovin', year: 1998 },
       { title: 'Secret of the Runes', year: 2001 },
-      { title: 'Leviathan', year: 2021 }
+      { title: 'Leviathan (Therion)', year: 2021 }
     ],
     imageUrl: 'https://wallpapercave.com/wp/wp6937111.jpg'
   },

@@ -4,10 +4,12 @@ import { Genre, GENRES } from '../data/genres';
 import { Music, BookOpen, Zap, Layers, ArrowRight } from 'lucide-react';
 import FretboardDiagram from './FretboardDiagram';
 import { SCALE_PATTERNS } from '../data/scalesData';
+import { bands as BANDS, Band } from '../data/bands';
 
 interface GenreDetailsProps {
   genre: Genre;
   onSelectGenre: (id: string) => void;
+  onSelectBand: (band: Band) => void;
 }
 
 const AlbumArt: React.FC<{ src?: string; alt: string; index: number }> = ({ src, alt, index }) => {
@@ -59,8 +61,15 @@ const AlbumArt: React.FC<{ src?: string; alt: string; index: number }> = ({ src,
   );
 };
 
-const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => {
+const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre, onSelectBand }) => {
   const influences = GENRES.filter(g => genre.influences.includes(g.id));
+
+  const handleBandClick = (bandName: string) => {
+    const foundBand = BANDS.find(b => b.name.toLowerCase() === bandName.toLowerCase());
+    if (foundBand) {
+      onSelectBand(foundBand);
+    }
+  };
 
   return (
     <motion.div
@@ -146,7 +155,12 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
                   </div>
                   <div className="flex-grow min-w-0">
                     <p className="text-[11px] font-black text-white uppercase tracking-wider truncate mb-1">{song.title}</p>
-                    <p className="text-[9px] text-zinc-500 uppercase font-bold tracking-[0.2em]">{song.artist}</p>
+                    <button 
+                      onClick={() => handleBandClick(song.artist)}
+                      className="text-[9px] text-zinc-500 hover:text-orange-500 uppercase font-bold tracking-[0.2em] transition-colors cursor-pointer"
+                    >
+                      {song.artist}
+                    </button>
                   </div>
                   <div className="h-10 w-px bg-white/5 group-hover:bg-orange-500/20 transition-colors mx-1" />
                   <Music size={12} className="text-zinc-800 group-hover:text-orange-500/50 transition-colors flex-shrink-0" />
@@ -162,12 +176,13 @@ const GenreDetails: React.FC<GenreDetailsProps> = ({ genre, onSelectGenre }) => 
             </h3>
             <div className="flex flex-wrap gap-2">
               {genre.bands.map(band => (
-                <div 
+                <button 
                   key={band} 
-                  className="px-4 py-2 bg-black/40 border border-white/5 rounded-lg text-[10px] font-black text-zinc-400 uppercase tracking-[0.15em] hover:text-white hover:border-orange-500/30 hover:bg-orange-500/5 transition-all cursor-crosshair"
+                  onClick={() => handleBandClick(band)}
+                  className="px-4 py-2 bg-black/40 border border-white/5 rounded-lg text-[10px] font-black text-zinc-400 uppercase tracking-[0.15em] hover:text-white hover:border-orange-500/30 hover:bg-orange-500/5 transition-all cursor-pointer"
                 >
                   {band}
-                </div>
+                </button>
               ))}
             </div>
           </section>
