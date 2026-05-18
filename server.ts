@@ -19,14 +19,23 @@ app.use(cookieParser());
 
 const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
-const APP_URL = (process.env.APP_URL || `http://localhost:${PORT}`).replace(/\/$/, '');
-const REDIRECT_URI = `${APP_URL}/api/auth/callback`;
 
-console.log('--- Spotify Config ---');
-console.log('APP_URL:', APP_URL);
-console.log('REDIRECT_URI:', REDIRECT_URI);
+function getRedirectUri(req: express.Request) {
+  // Use APP_URL if provided, otherwise detect from request headers
+  let baseUrl = process.env.APP_URL;
+  
+  if (!baseUrl) {
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol;
+    const host = req.get('host');
+    baseUrl = `${protocol}://${host}`;
+  }
+
+  return `${baseUrl.replace(/\/$/, '')}/api/auth/callback`;
+}
+
+console.log('--- Spotify Server Started ---');
 console.log('CLIENT_ID EXISTS:', !!SPOTIFY_CLIENT_ID);
-console.log('-----------------------');
+console.log('------------------------------');
 
 app.get('/api/auth/spotify/url', (req, res) => {
   if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET) {
@@ -35,11 +44,14 @@ app.get('/api/auth/spotify/url', (req, res) => {
     });
   }
 
+  const redirectUri = getRedirectUri(req);
+  console.log('Generating Auth URL with redirect_uri:', redirectUri);
+
   const scope = 'user-top-read user-read-private user-read-email';
   const params = new URLSearchParams({
     client_id: SPOTIFY_CLIENT_ID,
     response_type: 'code',
-    redirect_uri: REDIRECT_URI,
+    redirect_uri: redirectUri,
     scope: scope,
     show_dialog: 'true'
   });
@@ -50,10 +62,29 @@ app.get('/api/auth/spotify/url', (req, res) => {
 app.get('/api/auth/callback', async (req, res) => {
   const code = req.query.code as string;
   const error = req.query.error as string;
+  const redirectUri = getRedirectUri(req);
   
   if (error) {
     console.error('Spotify Auth Error:', error);
-    return res.status(400).send(`Authentication error: ${error}`);
+    let message = `Authentication error: ${error}`;
+    
+    if (error === 'server_error') {
+      message = `
+        <div style="font-family: sans-serif; padding: 2rem; background: #000; color: #fff; height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+          <h1 style="color: #f97316;">Spotify System Error</h1>
+          <p style="color: #a1a1aa; max-width: 500px; line-height: 1.6;">
+            Spotify returned a "server_error". This usually happens if your app is in <b>Development Mode</b> and you haven't added your email to the "Users and Access" list in the Spotify Dashboard.
+          </p>
+          <div style="background: #111; padding: 1rem; border-radius: 8px; border: 1px solid #333; margin: 1.5rem 0; text-align: left;">
+            <p style="margin: 0; font-size: 0.9rem;">1. Go to your <a href="https://developer.spotify.com/dashboard" target="_blank" style="color: #1DB954;">Spotify Dashboard</a></p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;">2. Select your App &rarr; <b>Settings</b> &rarr; <b>User Management</b></p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;">3. Add your Spotify email to the list.</p>
+          </div>
+          <button onclick="window.close()" style="background: #fff; color: #000; border: none; padding: 0.8rem 2rem; border-radius: 99px; font-weight: bold; cursor: pointer; margin-top: 1rem;">Close Window</button>
+        </div>
+      `;
+    }
+    return res.status(400).send(message);
   }
 
   if (!code) {
@@ -70,7 +101,7 @@ app.get('/api/auth/callback', async (req, res) => {
       new URLSearchParams({
         grant_type: 'authorization_code',
         code: code,
-        redirect_uri: REDIRECT_URI,
+        redirect_uri: redirectUri,
       }), 
       {
         headers: {

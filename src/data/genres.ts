@@ -364,7 +364,7 @@ export const GENRES: Genre[] = [
     id: 'rap-metal',
     name: 'Rap Metal',
     description: 'Rap-style vocals over heavy metal riffs, often with a strong political or social message.',
-    history: 'Pioniered by collaborations like Anthrax with Public Enemy, the genre reached maturity through Rage Against the Machine in the early 90s, blending urban aggression with the power of metal.',
+    history: 'Pioneered by collaborations like Anthrax with Public Enemy, the genre reached maturity through Rage Against the Machine in the early 90s, blending urban aggression with the power of metal.',
     bands: ['Rage Against the Machine', 'Body Count', 'Stuck Mojo', 'Anthrax'],
     songs: [
       { 
