@@ -6,9 +6,10 @@ import MetalGraph from './components/MetalGraph';
 import { BandsList } from './components/BandsList';
 import { BandModal } from './components/BandModal';
 import { bands as BANDS, Band } from './data/bands';
-import { Github, X } from 'lucide-react';
+import { Github, X, BarChart3 } from 'lucide-react';
+import { SpotifyAnalyzer } from './components/SpotifyAnalyzer';
 
-type Tab = 'map' | 'bands';
+type Tab = 'map' | 'bands' | 'spotify';
 
 export default function App() {
   const [selectedGenreId, setSelectedGenreId] = useState<string | null>(null);
@@ -95,6 +96,13 @@ export default function App() {
           >
             Bands
           </button>
+          <button 
+            onClick={() => setActiveTab('spotify')}
+            className={`transition-all flex items-center gap-2 pb-1 border-b-2 ${activeTab === 'spotify' ? 'text-orange-500 border-orange-500' : 'text-zinc-500 border-transparent hover:text-zinc-300'}`}
+          >
+            <BarChart3 size={14} className={activeTab === 'spotify' ? 'text-orange-500' : 'text-zinc-500'} />
+            How metal are you?
+          </button>
           <a 
             href="https://github.com/Embyeer/Metal-Atlas/tree/main" 
             target="_blank" 
@@ -130,7 +138,7 @@ export default function App() {
                 </p>
               </div>
             </motion.div>
-          ) : (
+          ) : activeTab === 'bands' ? (
             <motion.div 
               key="bands"
               initial={{ opacity: 0, scale: 0.98 }}
@@ -139,6 +147,16 @@ export default function App() {
               className="w-full h-full"
             >
               <BandsList onSelectBand={setSelectedBand} />
+            </motion.div>
+          ) : (
+            <motion.div 
+              key="spotify"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="w-full h-full"
+            >
+              <SpotifyAnalyzer />
             </motion.div>
           )}
         </AnimatePresence>

@@ -22,8 +22,8 @@ export const GENRES: Genre[] = [
   {
     id: 'heavy-metal',
     name: 'Heavy Metal',
-    description: 'Rădăcinile metalului, caracterizat prin riff-uri groase și masive de chitară, distorsiune amplificată și voci melodice puternice.',
-    history: 'A apărut la sfârșitul anilor 60 în Marea Britanie și SUA. Cu origini în blues-rock și psihedelic rock, trupe precum Black Sabbath au redefinit sunetul prin utilizarea intervalului de triton ("intervalul diavolului") și a volumului extrem. În anii 80, valul NWOBHM (New Wave of British Heavy Metal) a adus o abordare mai rapidă și mai tehnică.',
+    description: 'The roots of metal, characterized by thick, massive guitar riffs, amplified distortion, and powerful melodic vocals.',
+    history: 'Emerged in the late 60s in the UK and USA. Rooted in blues-rock and psychedelic rock, bands like Black Sabbath redefined the sound using the tritone interval ("the devil\'s interval") and extreme volume. In the 80s, the NWOBHM (New Wave of British Heavy Metal) wave brought a faster and more technical approach.',
     bands: ['Black Sabbath', 'Iron Maiden', 'Judas Priest', 'Saxon', 'Deep Purple'],
     songs: [
       { 
@@ -49,8 +49,8 @@ export const GENRES: Genre[] = [
   {
     id: 'thrash-metal',
     name: 'Thrash Metal',
-    description: 'Viteză extremă, agresivitate și complexitate tehnică definită prin riff-uri percutante de tip "palm-muted".',
-    history: 'S-a dezvoltat la începutul anilor 80 ca o reacție la curentul glam metal. A fuzionat precizia tehnica a NWOBHM cu agresivitatea și viteza hardcore punk-ului. "The Big Four" (Metallica, Megadeth, Slayer, Anthrax) au stabilit standardele genului în zona Bay Area din California.',
+    description: 'Extreme speed, aggression, and technical complexity defined by percussive "palm-muted" riffs.',
+    history: 'Developed in the early 80s as a reaction to the glam metal trend. It fused the technical precision of NWOBHM with the aggression and speed of hardcore punk. "The Big Four" (Metallica, Megadeth, Slayer, Anthrax) set genre standards in the Bay Area of California.',
     bands: ['Metallica', 'Megadeth', 'Slayer', 'Anthrax', 'Testament', 'Kreator'],
     songs: [
       { 
@@ -76,8 +76,8 @@ export const GENRES: Genre[] = [
   {
     id: 'death-metal',
     name: 'Death Metal',
-    description: 'Voci "growl" de tip gutural, chitări acordate extrem de jos (down-tuned) și structuri ritmice dominate de blast-beats.',
-    history: 'Evoluat din thrash metal la mijlocul anilor 80. Pionierat de trupe precum Death (din Florida) și Possessed, genul a explorat teme de mortalitate și structuri muzicale mult mai complexe și brutale decât predecesorii săi.',
+    description: 'Guttural "growl" vocals, extremely down-tuned guitars, and rhythmic structures dominated by blast-beats.',
+    history: 'Evolved from thrash metal in the mid-80s. Pioneered by bands like Death (from Florida) and Possessed, the genre explored themes of mortality and much more complex and brutal musical structures than its predecessors.',
     bands: ['Death', 'Cannibal Corpse', 'Morbid Angel', 'Gojira', 'Deicide', 'Obituary'],
     songs: [
       { 
@@ -103,8 +103,8 @@ export const GENRES: Genre[] = [
   {
     id: 'black-metal',
     name: 'Black Metal',
-    description: 'Atmosferă rece și nihilistă, voci ascuțite, tremolo picking și o estetică mistică adesea lo-fi.',
-    history: 'A apărut în anii 80 ("primul val") cu trupe ca Venom și Celtic Frost. Al doilea val norvegian din anii 90 a definit sunetul modern prin producție minimalistă, teme anti-religioase și utilizarea machiajului "corpse paint".',
+    description: 'Cold and nihilistic atmosphere, high-pitched vocals, tremolo picking, and an often lo-fi mystical aesthetic.',
+    history: 'Appeared in the 80s ("first wave") with bands like Venom and Celtic Frost. The second Norwegian wave of the 90s defined the modern sound through minimalist production, anti-religious themes, and the use of "corpse paint" makeup.',
     bands: ['Mayhem', 'Burzum', 'Darkthrone', 'Emperor', 'Immortal', 'Enslaved'],
     songs: [
       { 
@@ -130,8 +130,8 @@ export const GENRES: Genre[] = [
   {
     id: 'power-metal',
     name: 'Power Metal',
-    description: 'Imnuri epice, viteză, voci înalte de tip operatic și teme lirice fantastice sau mitologice.',
-    history: 'S-a cristalizat în anii 80 în Germania și Scandinavia. Pune accent pe melodie, virtuozitate instrumentală și o atmosferă "larger than life", fiind influențat de muzica clasică și epopeile fantastice.',
+    description: 'Epic anthems, speed, high operatic vocals, and fantastic or mythological lyrical themes.',
+    history: 'Crystallized in the 80s in Germany and Scandinavia. Emphasizes melody, instrumental virtuosity, and a "larger than life" atmosphere, influenced by classical music and fantasy epics.',
     bands: ['Helloween', 'Blind Guardian', 'Sabaton', 'DragonForce', 'Stratovarius', 'Nightwish'],
     songs: [
       { 
@@ -157,8 +157,8 @@ export const GENRES: Genre[] = [
   {
     id: 'progressive-metal',
     name: 'Progressive Metal',
-    description: 'Măsuri de timp compuse, compoziții narative lungi și o fuziune între metal și complexitatea structurală a rock-ului progresiv.',
-    history: 'A luat naștere la sfârșitul anilor 80 prin trupe care doreau să depășească limitele convenționale ale metalului. Combină agresivitatea cu experimentalismul, utilizând frecvent poliritmii și modulații complexe.',
+    description: 'Compound time signatures, long narrative compositions, and a fusion between metal and the structural complexity of progressive rock.',
+    history: 'Born in the late 80s through bands that wanted to push the conventional limits of metal. It combines aggression with experimentalism, frequently using polyrhythms and complex modulations.',
     bands: ['Dream Theater', 'Opeth', 'Queensrÿche', 'Tool', 'Mastodon', 'Fates Warning'],
     songs: [
       { 
@@ -184,8 +184,8 @@ export const GENRES: Genre[] = [
   {
     id: 'speed-metal',
     name: 'Speed Metal',
-    description: 'Viteză extremă și energie brută, servind ca punte între heavy metalul tradițional și thrash metal.',
-    history: 'A apărut la sfârșitul anilor 70 și începutul anilor 80. Trupe precum Motörhead și Accept au accelerat tempo-ul heavy metalului, punând bazele pentru tot ce a urmat în zona metalului extrem. Se caracterizează prin riff-uri rapide, dar care păstrează o structură armonică tradițională.',
+    description: 'Extreme speed and raw energy, serving as a bridge between traditional heavy metal and thrash metal.',
+    history: 'Appeared in the late 70s and early 80s. Bands like Motörhead and Accept accelerated the tempo of heavy metal, laying the foundation for everything that followed in the extreme metal zone. Characterized by fast riffs that maintain a traditional harmonic structure.',
     bands: ['Motörhead', 'Venom', 'Accept', 'Exciter', 'Anvil'],
     songs: [
       { 
@@ -211,8 +211,8 @@ export const GENRES: Genre[] = [
   {
     id: 'doom-metal',
     name: 'Doom Metal',
-    description: 'Tempo-uri foarte lente, acordaj jos și riff-uri grele care evocă o atmosferă de disperare și melancolie.',
-    history: 'Direct descendent al sunetului timpuriu Black Sabbath. Genul s-a cristalizat în anii 80 prin trupe care au dus lentoarea și greutatea la un nou nivel, explorând teme de dread, mitologie și introspecție.',
+    description: 'Very slow tempos, low tuning, and heavy riffs that evoke an atmosphere of despair and melancholy.',
+    history: 'Direct descendant of the early Black Sabbath sound. The genre crystallized in the 80s through bands that took slowness and weight to a new level, exploring themes of dread, mythology, and introspection.',
     bands: ['Candlemass', 'Saint Vitus', 'Sleep', 'Trouble', 'Cathedral', 'Pentagram'],
     songs: [
       { 
@@ -238,8 +238,8 @@ export const GENRES: Genre[] = [
   {
     id: 'glam-metal',
     name: 'Glam Metal',
-    description: 'O fuziune între heavy metal și hard rock, definită prin imagini flamboyante, refrenuri "catchy" și balade de putere.',
-    history: 'A dominat scena în anii 80, în special în Los Angeles (Sunset Strip). Deși criticat pentru accentul pus pe imagine, genul a adus heavy metalul în mainstream prin producții strălucitoare și o energie de tip arena rock.',
+    description: 'A fusion between heavy metal and hard rock, defined by flamboyant imagery, catchy choruses, and power ballads.',
+    history: 'Dominated the scene in the 80s, especially in Los Angeles (Sunset Strip). Although criticized for its emphasis on image, the genre brought heavy metal into the mainstream through shiny productions and arena rock energy.',
     bands: ['Van Halen', 'Mötley Crüe', 'Poison', 'Ratt', 'Twisted Sister', 'Def Leppard'],
     songs: [
       { 
@@ -270,8 +270,8 @@ export const GENRES: Genre[] = [
   {
     id: 'alternative-metal',
     name: 'Alternative Metal',
-    description: 'Experimentează cu structuri metalice, îmbinând elemente de funk, grunge și rock industrial.',
-    history: 'A apărut la sfârșitul anilor 80 ca o reacție la rigiditatea subgenurilor tradiționale. Trupe precum Faith No More au introdus elemente neconvenționale, pavând drumul pentru explozia de diversitate din anii 90.',
+    description: 'Experiments with metal structures, blending elements of funk, grunge, and industrial rock.',
+    history: 'Emerged in the late 80s as a reaction to the rigidity of traditional subgenres. Bands like Faith No More introduced unconventional elements, paving the way for the explosion of diversity in the 90s.',
     bands: ['Faith No More', 'Alice in Chains', 'Soundgarden', 'Rage Against the Machine', ],
     songs: [
       { 
@@ -297,8 +297,8 @@ export const GENRES: Genre[] = [
   {
     id: 'groove-metal',
     name: 'Groove Metal',
-    description: 'Riff-uri percutante, tempo-uri medii și o concentrare pe ritm și "groove", păstrând în același timp agresivitatea thrash-ului.',
-    history: 'A apărut la începutul anilor 90 ca o evoluție a thrash metalului. Pantera a definit genul prin albumul "Cowboys from Hell", punând accent pe forța brută și pe riff-uri care te fac să te miști (groove), în detrimentul vitezei pure a thrash-ului.',
+    description: 'Percussive riffs, mid-tempos, and a focus on rhythm and "groove", while maintaining thrash aggression.',
+    history: 'Appeared at the beginning of the 90s as an evolution of thrash metal. Pantera defined the genre with the album "Cowboys from Hell", emphasizing raw power and riffs that make you move (groove), over pure thrash speed.',
     bands: ['Pantera', 'Exhorder', 'Machine Head', 'Sepultura', 'Lamb of God'],
     songs: [
       { 
@@ -319,8 +319,8 @@ export const GENRES: Genre[] = [
   {
     id: 'gothic-metal',
     name: 'Gothic Metal',
-    description: 'Atmosferă întunecată, melancolică, combinând greutatea doom metalului cu estetica gotică.',
-    history: 'S-a dezvoltat la începutul anilor 90, derivând din death/doom metal. Pionieri precum Paradise Lost au introdus voci feminine și clape, creând un sunet romantic dar tragic. Type O Negative a adus o abordare mai baritonă și satirică.',
+    description: 'Dark, melancholic atmosphere, combining the weight of doom metal with gothic aesthetics.',
+    history: 'Developed in the early 90s, deriving from death/doom metal. Pioneers like Paradise Lost introduced female vocals and keyboards, creating a romantic yet tragic sound. Type O Negative brought a more baritone and satirical approach.',
     bands: ['Type O Negative', 'Paradise Lost', 'My Dying Bride', 'Tiamat', 'Theatre of Tragedy'],
     songs: [
       { 
@@ -341,8 +341,8 @@ export const GENRES: Genre[] = [
   {
     id: 'funk-metal',
     name: 'Funk Metal',
-    description: 'Slap bass, ritmuri sincopate de funk fuzionate cu chitări grele de metal și energie punk.',
-    history: 'A explodat la sfârșitul anilor 80. Trupe precum Faith No More și Primus au sfidat barierele prin introducerea elementelor de funk și jazz în contextul metalului, oferind o alternativă distractivă și tehnică la subgenurile extrem de serioase.',
+    description: 'Slap bass, syncopated funk rhythms fused with heavy metal guitars and punk energy.',
+    history: 'Exploded in the late 80s. Bands like Faith No More and Primus defied barriers by introducing elements of funk and jazz in the context of metal, providing a fun and technical alternative to extremely serious subgenres.',
     bands: ['Faith No More', 'Primus', 'Living Colour', 'Infectious Grooves'],
     songs: [
       { 
@@ -363,8 +363,8 @@ export const GENRES: Genre[] = [
   {
     id: 'rap-metal',
     name: 'Rap Metal',
-    description: 'Voci de tip rap peste riff-uri grele de metal, adesea cu un mesaj politic sau social puternic.',
-    history: 'Pionierat prin colaborări precum Anthrax cu Public Enemy, genul a atins maturitatea prin Rage Against the Machine la începutul anilor 90, îmbinând agresivitatea urbană cu puterea metalului.',
+    description: 'Rap-style vocals over heavy metal riffs, often with a strong political or social message.',
+    history: 'Pioniered by collaborations like Anthrax with Public Enemy, the genre reached maturity through Rage Against the Machine in the early 90s, blending urban aggression with the power of metal.',
     bands: ['Rage Against the Machine', 'Body Count', 'Stuck Mojo', 'Anthrax'],
     songs: [
       { 
@@ -385,8 +385,8 @@ export const GENRES: Genre[] = [
   {
     id: 'nu-metal',
     name: 'Nu Metal',
-    description: 'Chitări down-tuned, elemente de hip-hop, industrial și grunge, cu un accent pe starea emoțională și catharsis.',
-    history: 'A apărut la mijlocul anilor 90 prin debutul trupei Korn. A devenit cel mai popular subgen de metal la sfârșitul anilor 90, introducendo elemente de platane (turntables) și o estetică vestimentară inspirată de cultura stradală.',
+    description: 'Down-tuned guitars, elements of hip-hop, industrial, and grunge, with an emphasis on emotional state and catharsis.',
+    history: 'Emerged in the mid-90s with the debut of the band Korn. It became the most popular subgenre of metal in the late 90s, introducing elements of turntables and a clothing aesthetic inspired by street culture.',
     bands: ['Korn', 'Deftones', 'Linkin Park', 'Slipknot', 'Limp Bizkit'],
     songs: [
       { 
@@ -407,8 +407,8 @@ export const GENRES: Genre[] = [
   {
     id: 'ndh',
     name: 'Neue Deutsche Härte',
-    description: 'Metal industrial german caracterizat prin riff-uri repetitive, grele, voci baritone și o estetică marțială.',
-    history: 'S-a cristalizat în Germania în anii 90. Rammstein a devenit vârful de lance internațional al genului, combinând elemente de techno, industrial și hard rock într-un format vizual copleșitor.',
+    description: 'German industrial metal characterized by repetitive, heavy riffs, baritone vocals, and a martial aesthetic.',
+    history: 'Crystallized in Germany in the 90s. Rammstein became the international spearhead of the genre, combining elements of techno, industrial, and hard rock in an overwhelming visual format.',
     bands: ['Rammstein', 'Oomph!', 'Eisbrecher', 'Megaherz', 'Die Krupps'],
     songs: [
       { 
@@ -429,8 +429,8 @@ export const GENRES: Genre[] = [
   {
     id: 'avant-garde-metal',
     name: 'Avant-garde Metal',
-    description: 'Experimental, neconvențional și avangardist, depășind limitele metalului tradițional prin utilizarea elementelor de jazz, muzică clasică sau electronică.',
-    history: 'S-a format la sfârșitul anilor 80 prin trupe precum Celtic Frost (perioada "Into the Pandemonium"). Genul se caracterizează prin refuzul de a respecta structurile standard, folosind instrumente atipice și tehnici vocale experimentale.',
+    description: 'Experimental, unconventional, and avant-garde, pushing the limits of traditional metal through the use of jazz, classical, or electronic elements.',
+    history: 'Formed in the late 80s through bands like Celtic Frost (the "Into the Pandemonium" period). The genre is characterized by the refusal to respect standard structures, using atypical instruments and experimental vocal techniques.',
     bands: ['Arcturus', 'Mr. Bungle', 'Borgir', 'Unexpect', 'Solefald'],
     songs: [
       { 
@@ -451,8 +451,8 @@ export const GENRES: Genre[] = [
   {
     id: 'christian-metal',
     name: 'Christian Metal',
-    description: 'Caracterizat prin mesaje lirice creștine, acoperind o gamă largă de stiluri de la heavy la metal extrem.',
-    history: 'Pionierat în anii 70 de trupe precum Resurrection Band, genul a explodat în anii 80 cu Stryper. A dovedit că agresivitatea metalului poate fi combinată cu mesaje de credință, creând o subcultură vastă și dedicată.',
+    description: 'Characterized by Christian lyrical messages, covering a wide range of styles from heavy to extreme metal.',
+    history: 'Pioneered in the 70s by bands like Resurrection Band, the genre exploded in the 80s with Stryper. It proved that metal\'s aggression can be combined with messages of faith, creating a vast and dedicated subculture.',
     bands: ['Stryper', 'The Devil Wears Prada', 'Skillet', 'August Burns Red', 'Mortification'],
     songs: [
       { 
@@ -473,8 +473,8 @@ export const GENRES: Genre[] = [
   {
     id: 'crust-punk',
     name: 'Crust Punk',
-    description: 'O fuziune brutală între hardcore punk și metal extrem (thrash/death), cu o estetică murdară și mesaje politice radicale.',
-    history: 'A apărut în Marea Britanie la mijlocul anilor 80. Trupe ca Amebix și Antisect au preluat greutatea metalică și au combinat-o cu viteza punk-ului, creând un sunet dens, distorsionat și adesea apocaliptic.',
+    description: 'A brutal fusion between hardcore punk and extreme metal (thrash/death), with a dirty aesthetic and radical political messages.',
+    history: 'Appeared in the UK in the mid-80s. Bands like Amebix and Antisect took metal weight and combined it with punk speed, creating a dense, distorted, and often apocalyptic sound.',
     bands: ['Amebix', 'Antisect', 'Extreme Noise Terror', 'Discharge', 'Dystopia'],
     songs: [
       { 
@@ -495,8 +495,8 @@ export const GENRES: Genre[] = [
   {
     id: 'biker-metal',
     name: 'Biker Metal',
-    description: 'Fuziune de hard rock, heavy metal și elemente de punk, strâns legată de cultura motocicliștilor și rebeliunea urbană.',
-    history: 'Motörhead este chintesența acestui gen, combinând viteza și atitudinea punk cu forța heavy metalului. S-a dezvoltat în anii 70 și 80 ca un stil de viață, axat pe libertate, drumuri lungi și sunetul "murdar" al chitarelor.',
+    description: 'Fusion of hard rock, heavy metal, and punk elements, closely linked to biker culture and urban rebellion.',
+    history: 'Motörhead is the quintessence of this genre, combining punk speed and attitude with heavy metal power. It developed in the 70s and 80s as a lifestyle, focused on freedom, long roads, and the "dirty" sound of guitars.',
     bands: ['Motörhead', 'Orange Goblin', 'Saxon', 'Girlschool', 'Black Label Society'],
     songs: [
       { 
@@ -517,8 +517,8 @@ export const GENRES: Genre[] = [
   {
     id: 'extreme-metal',
     name: 'Extreme Metal',
-    description: 'Termen umbrelă pentru subgenurile cele mai abrazive și intense: death, black, thrash și doom metal.',
-    history: 'S-a cristalizat la mijlocul anilor 80 ca o mișcare subterană care dorea să împingă limitele vitezei și brutalității dincolo de heavy metalul tradițional. A dus la formarea unor scene globale cu coduri estetice și sonore stricte.',
+    description: 'An umbrella term for the most abrasive and intense subgenres: death, black, thrash, and doom metal.',
+    history: 'Crystallized in the mid-80s as an underground movement that wanted to push the limits of speed and brutality beyond traditional heavy metal. It led to the formation of global scenes with strict aesthetic and sound codes.',
     bands: ['Possessed', 'Hellhammer', 'Venom', 'Bathory', 'Celtic Frost'],
     songs: [
       { 
@@ -539,8 +539,8 @@ export const GENRES: Genre[] = [
   {
     id: 'folk-metal',
     name: 'Folk Metal',
-    description: 'Metal care încorporează instrumente tradiționale, melodii populare și teme lirice despre natură, mitologie și istorie locală.',
-    history: 'A apărut la începutul anilor 90, Skyclad fiind pionierii care au introdus vioara în metal. Ulterior, trupe din Scandinavia au combinat black metalul cu folclorul nordic, creând o scenă imensă care folosește flaute, cimpoaie și harpe.',
+    description: 'Metal incorporating traditional instruments, folk melodies, and lyrical themes about nature, mythology, and local history.',
+    history: 'Emerged in the early 90s, with Skyclad being the pioneers who introduced the violin into metal. Later, bands from Scandinavia combined black metal with Nordic folklore, creating a huge scene that uses flutes, bagpipes, and harps.',
     bands: ['Eluveitie', 'Korpiklaani', 'Ensiferum', 'In Extremo', 'Amorphis'],
     songs: [
       { 
@@ -561,8 +561,8 @@ export const GENRES: Genre[] = [
   {
     id: 'grindcore',
     name: 'Grindcore',
-    description: 'Cea mai extremă fuziune între death metal și hardcore punk, caracterizată prin piese foarte scurte, viteze halucinante și blast-beats constante.',
-    history: 'S-a născut în Marea Britanie la mijlocul anilor 80. Napalm Death a definit genul prin albumul "Scum", reducând piesele la esența brutalității, adesea durând doar câteva secunde.',
+    description: 'The most extreme fusion between death metal and hardcore punk, characterized by very short songs, hallucinating speeds, and constant blast-beats.',
+    history: 'Born in the UK in the mid-80s. Napalm Death defined the genre through the album "Scum", reducing songs to the essence of brutality, often lasting only a few seconds.',
     bands: ['Napalm Death', 'Carcass', 'Pig Destroyer', 'Repulsion', 'Nasum'],
     songs: [
       { 
@@ -583,8 +583,8 @@ export const GENRES: Genre[] = [
   {
     id: 'kawaii-metal',
     name: 'Kawaii Metal',
-    description: 'Fuziune între idol pop-ul japonez și heavy metal, rezultând un stil contrastant dar extrem de energic.',
-    history: 'A fost creat de trupa Babymetal la începutul anilor 2010. Combină coregrafii pop, voci melodice "drăguțe" (kawaii) peste un fundament instrumental de power, thrash sau death metal extrem de tehnic.',
+    description: 'A fusion between Japanese idol pop and heavy metal, resulting in a contrasting but extremely energetic style.',
+    history: 'Created by the band Babymetal in the early 2010s. Combines pop choreography, "cute" (kawaii) melodic vocals over an instrumental foundation of highly technical power, thrash, or death metal.',
     bands: ['Babymetal', 'Ladybaby', 'PassCode', 'Hanabie.'],
     songs: [
       { 
@@ -605,8 +605,8 @@ export const GENRES: Genre[] = [
   {
     id: 'latin-metal',
     name: 'Latin Metal',
-    description: 'Metal care încorporează ritmuri, instrumentație și limbi latino-americane.',
-    history: 'A obținut recunoaștere globală prin Sepultura (perioada "Roots") și Puya. Combină percuția tribală și influențele salsa/merengue cu rigoarea metalului, explorând frecvent teme de identitate culturală și rezistență.',
+    description: 'Metal incorporating Latin American rhythms, instrumentation, and languages.',
+    history: 'Achieved global recognition through Sepultura (the "Roots" period) and Puya. It combines tribal percussion and salsa/merengue influences with metal rigor, frequently exploring themes of cultural identity and resistance.',
     bands: ['Sepultura', 'Puya', 'Ill Niño', 'Soulfly', 'A.N.I.M.A.L.'],
     songs: [
       { 
@@ -627,8 +627,8 @@ export const GENRES: Genre[] = [
   {
     id: 'metalcore',
     name: 'Metalcore',
-    description: 'Fuziune între extreme metal și hardcore punk, caracterizată prin utilizarea "breakdown-urilor" și alternanța dintre voci curate și țipete.',
-    history: 'A evoluat din scena hardcore a anilor 90 (Earth Crisis) și a explodat în anii 2000 prin trupe ca Killswitch Engage, care au încorporat mai multe melodii de tip Gothenburg death metal.',
+    description: 'A fusion between extreme metal and hardcore punk, characterized by the use of "breakdowns" and alternating between clean and screaming vocals.',
+    history: 'Evolved from the 90s hardcore scene (Earth Crisis) and exploded in the 2000s through bands like Killswitch Engage, which incorporated more Gothenburg-style death metal melodies.',
     bands: ['Killswitch Engage', 'As I Lay Dying', 'Avenged Sevenfold', 'Architects', 'Bring Me The Horizon'],
     songs: [
       { 
@@ -649,8 +649,8 @@ export const GENRES: Genre[] = [
   {
     id: 'neoclassical-metal',
     name: 'Neoclassical Metal',
-    description: 'Metal caracterizat prin virtuozitate extremă și utilizarea directă a formelor și melodiilor muzicii clasice.',
-    history: 'Popularizat de Yngwie Malmsteen în anii 80. Pune un accent imens pe tehnică, folosind arpegii rapide și game preluate de la compozitori precum Bach, Paganini sau Vivaldi într-un context de heavy metal.',
+    description: 'Metal characterized by extreme virtuosity and direct use of classical music forms and melodies.',
+    history: 'Popularized by Yngwie Malmsteen in the 80s. Places immense emphasis on technique, using fast arpeggios and scales taken from composers like Bach, Paganini, or Vivaldi in a heavy metal context.',
     bands: ['Yngwie Malmsteen', 'Symphony X', 'Stratovarius', 'Jason Becker', 'Cacophony'],
     songs: [
       { 
@@ -671,8 +671,8 @@ export const GENRES: Genre[] = [
   {
     id: 'post-metal',
     name: 'Post-metal',
-    description: 'O formă expansivă de metal care îmbină post-rock-ul cu sludge-ul sau doom metalul, axată pe atmosferă, textură și crescendo-uri dinamice.',
-    history: 'A luat naștere la începutul anilor 2000 prin trupe precum Neurosis și Isis. Se distanțează de structurile vers-refren, preferând piese lungi, instrumentale sau cu voci sparse, care construiesc o stare de spirit imersivă.',
+    description: 'An expansive form of metal blending post-rock with sludge or doom metal, focused on atmosphere, texture, and dynamic crescendos.',
+    history: 'Born in the early 2000s through bands like Neurosis and Isis. Moves away from verse-chorus structures, preferring long, instrumental, or sparse vocal pieces that build an immersive mood.',
     bands: ['Neurosis', 'Isis', 'Cult of Luna', 'Russian Circles', 'Pelican'],
     songs: [
       { 
@@ -693,8 +693,8 @@ export const GENRES: Genre[] = [
   {
     id: 'symphonic-metal',
     name: 'Symphonic Metal',
-    description: 'Metal care încorporează elemente de orchestră, coruri și voci operatice (adesea feminine).',
-    history: 'A apărut la sfârșitul anilor 90, trupe precum Nightwish sau Within Temptation fuzionând puterea heavy metalului cu grandoarea muzicii de film și a operei. Se caracterizează prin aranjamente bogate și o atmosferă epică.',
+    description: 'Metal incorporating orchestral elements, choirs, and operatic vocals (often female).',
+    history: 'Appeared in the late 90s, with bands like Nightwish or Within Temptation fusing heavy metal power with the grandeur of film scores and opera. Characterized by rich arrangements and an epic atmosphere.',
     bands: ['Nightwish', 'Within Temptation', 'Epica', 'Therion', 'Haggard'],
     songs: [
       { 
