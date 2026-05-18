@@ -19,12 +19,20 @@ app.use(cookieParser());
 
 const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID;
 const SPOTIFY_CLIENT_SECRET = process.env.SPOTIFY_CLIENT_SECRET;
-const APP_URL = process.env.APP_URL || `http://localhost:${PORT}`;
-const REDIRECT_URI = `${APP_URL}/auth/callback`;
+const APP_URL = (process.env.APP_URL || `http://localhost:${PORT}`).replace(/\/$/, '');
+const REDIRECT_URI = `${APP_URL}/api/auth/callback`;
+
+console.log('--- Spotify Config ---');
+console.log('APP_URL:', APP_URL);
+console.log('REDIRECT_URI:', REDIRECT_URI);
+console.log('CLIENT_ID EXISTS:', !!SPOTIFY_CLIENT_ID);
+console.log('-----------------------');
 
 app.get('/api/auth/spotify/url', (req, res) => {
-  if (!SPOTIFY_CLIENT_ID) {
-    return res.status(500).json({ error: 'SPOTIFY_CLIENT_ID not configured' });
+  if (!SPOTIFY_CLIENT_ID || !SPOTIFY_CLIENT_SECRET) {
+    return res.status(500).json({ 
+      error: 'Spotify credentials not configured. Please set SPOTIFY_CLIENT_ID and SPOTIFY_CLIENT_SECRET in the settings menu.' 
+    });
   }
 
   const scope = 'user-top-read user-read-private user-read-email';
@@ -39,12 +47,21 @@ app.get('/api/auth/spotify/url', (req, res) => {
   res.json({ url: `https://accounts.spotify.com/authorize?${params.toString()}` });
 });
 
-app.get('/auth/callback', async (req, res) => {
+app.get('/api/auth/callback', async (req, res) => {
   const code = req.query.code as string;
+  const error = req.query.error as string;
   
-  if (!code) {
-    return res.send('No code provided');
+  if (error) {
+    console.error('Spotify Auth Error:', error);
+    return res.status(400).send(`Authentication error: ${error}`);
   }
+
+  if (!code) {
+    console.warn('No code provided in callback');
+    return res.status(400).send('No code provided');
+  }
+
+  console.log('Received code, exchanging for token...');
 
   try {
     const authHeader = Buffer.from(`${SPOTIFY_CLIENT_ID}:${SPOTIFY_CLIENT_SECRET}`).toString('base64');

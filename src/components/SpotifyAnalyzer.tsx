@@ -52,8 +52,14 @@ export const SpotifyAnalyzer: React.FC = () => {
   const handleLogin = async () => {
     try {
       const res = await fetch('/api/auth/spotify/url');
-      const { url } = await res.json();
-      window.open(url, 'spotify_login', 'width=600,height=800');
+      const data = await res.json();
+      
+      if (!res.ok) {
+        setError(data.error || 'Failed to start login flow');
+        return;
+      }
+      
+      window.open(data.url, 'spotify_login', 'width=600,height=800');
     } catch (e) {
       setError('Failed to start login flow');
     }

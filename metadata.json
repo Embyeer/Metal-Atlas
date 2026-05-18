@@ -1,6 +1,8 @@
 {
   "name": "Metal Atlas",
-  "description": "Explorare genomică a subgenurilor Heavy Metal: mapping tehnic, istorie detaliată și diagrame de scări muzicale.",
+  "description": "A technical and historical exploration of the evolution of heavy metal subgenres, featuring detailed timelines, musical scales, and Spotify listening analysis.",
   "requestFramePermissions": [],
-  "majorCapabilities": []
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
